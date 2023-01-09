@@ -11,15 +11,14 @@ $Rojo: #861720;
 $Amarillo: #f4d62a;
 $Amarillo2: #f8d15f;
 $Transparente: rgba(255, 255, 255, 0);
+$Morado: #660066;
+$Morado2: #300047;
 
-$Primario: $Rosa;
-$Secundario: $Rosaf;
+$Primario: $Morado;
+$Secundario: $Morado2;
 
 /*Tipos de letra*/
-$Nunito:  'Nunito Sans', sans-serif;
-$Fredoka: 'Fredoka One', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Modak&family=Monoton&family=Nosifer&family=Press+Start+2P&family=Rubik+Beastly&family=Rubik+Spray+Paint&family=Rubik+Wet+Paint&family=Ruslan+Display&display=swap');
 
-$Letra: $Nunito;
-
-/*Fondos*/
-$Fondo: url(../temas/enero/fondo.png);
+//$Letra:;
+//$Letra2:;

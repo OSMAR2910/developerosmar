@@ -1,7 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Modak&family=Monoton&family=Nosifer&family=Press+Start+2P&family=Rubik+Beastly&family=Rubik+Spray+Paint&family=Rubik+Wet+Paint&family=Ruslan+Display&display=swap");
+@-webkit-keyframes lef {
+  0% {
+    transform: translate(-100vw, 0);
+  }
+  50% {
+    transform: translate(2vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes lef {
+  0% {
+    transform: translate(-100vw, 0);
+  }
+  50% {
+    transform: translate(2vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes rif {
+  0% {
+    transform: translate(100vw, 0);
+  }
+  50% {
+    transform: translate(-2vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes rif {
+  0% {
+    transform: translate(100vw, 0);
+  }
+  50% {
+    transform: translate(-2vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 /*Colores*/
 /*Tipos de letra*/
-/*Fondos*/
-@import url("https://fonts.googleapis.com/css2?family=Chango&family=Modak&family=Monoton&family=Nosifer&family=Press+Start+2P&family=Rubik+Beastly&family=Rubik+Spray+Paint&family=Rubik+Wet+Paint&family=Ruslan+Display&display=swap");
 * {
   scroll-behavior: smooth;
 }
@@ -18,6 +61,7 @@ body header {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 body header ul {
   width: 70%;
@@ -57,10 +101,16 @@ body #cont section {
   float: right;
 }
 body #cont #in {
-  font-family: "Nosifer", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/woman/img6.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 105% 50%;
+}
+body #cont #in h1 {
+  font-family: "Nosifer", cursive;
 }
 body #cont #pro {
   display: grid;
@@ -114,6 +164,10 @@ body #cont #len {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("../img/woman/img2.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 15% 15%;
 }
 body #cont #len h1 {
   font-family: "Nosifer", cursive;
@@ -125,6 +179,8 @@ body #cont #len #len_cont {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-animation: len 3s 1;
+          animation: len 3s 1;
 }
 body #cont #len #len_cont #len_cont_cont {
   width: 100%;
@@ -160,20 +216,24 @@ body #cont #tec {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("../img/woman/img1.png");
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: 110% 10%;
 }
 body #cont #tec h1 {
   font-family: "Nosifer", cursive;
   display: flex;
   grid-column: 1/4;
 }
-body #cont #tec #tec_cont {
+body #cont #tec .tec_cont {
   width: 100%;
 }
-body #cont #tec #tec_cont #tec_cont_cont {
+body #cont #tec .tec_cont .tec_cont_cont {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
-body #cont #tec #tec_cont #tec_cont_cont div {
+body #cont #tec .tec_cont .tec_cont_cont div {
   display: flex;
   flex-direction: column;
   background-color: #300047;
@@ -183,14 +243,14 @@ body #cont #tec #tec_cont #tec_cont_cont div {
   margin: 5%;
   padding: 10%;
 }
-body #cont #tec #tec_cont #tec_cont_cont div img {
+body #cont #tec .tec_cont .tec_cont_cont div img {
   width: 100%;
   transition: all 0.5s;
 }
-body #cont #tec #tec_cont #tec_cont_cont div img:hover {
+body #cont #tec .tec_cont .tec_cont_cont div img:hover {
   transform: scale(1.1);
 }
-body #cont #tec #tec_cont #tec_cont_cont div b {
+body #cont #tec .tec_cont .tec_cont_cont div b {
   font-family: "Rubik Wet Paint", cursive;
   margin-top: 15%;
   color: #ffffff;
@@ -202,36 +262,52 @@ body #cont #con {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("../img/woman/img3.png");
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
 }
 body #cont #con h1 {
+  margin-top: -15%;
   font-family: "Nosifer", cursive;
   display: flex;
 }
-body #cont #con div {
+body #cont #con #con_cont {
   width: 100%;
-  height: 40%;
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body #cont #con div a {
-  font-family: "Rubik Wet Paint", cursive;
+body #cont #con #con_cont ul {
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body #cont #con #con_cont ul li {
   display: flex;
   justify-content: center;
+  list-style: none;
+}
+body #cont #con #con_cont ul li a {
   align-items: center;
-  border-radius: 5%;
-  font-size: 200%;
   background-color: #300047;
-  margin: 3%;
-  padding: 3%;
+  font-family: "Rubik Wet Paint", cursive;
+  display: flex;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 200%;
   text-decoration: none;
   color: #ffffff;
   transition: all 0.5s;
 }
-body #cont #con div a .icon {
+body #cont #con #con_cont ul li a .icon {
   font-size: 140%;
-  margin-right: 2%;
+  margin-right: 4%;
 }
-body #cont #con div a:hover {
-  padding: 3.5%;
+body #cont #con #con_cont ul li a:hover {
+  padding: 1.5rem;
 }/*# sourceMappingURL=index.css.map */

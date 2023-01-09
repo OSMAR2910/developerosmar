@@ -1,0 +1,22 @@
+@keyframes lef {
+    0% {
+        transform: translate(-100vw, 0);
+    }
+    50% {
+        transform: translate( 2vw, 0);
+    }
+    100% {
+        transform: translate( 0, 0);
+    }
+}
+@keyframes rif {
+    0% {
+        transform: translate( 100vw, 0);
+    }
+    50% {
+        transform: translate( -2vw, 0);
+    }
+    100% {
+        transform: translate( 0, 0);
+    }
+}
