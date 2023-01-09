@@ -1,0 +1,237 @@
+/*Colores*/
+/*Tipos de letra*/
+/*Fondos*/
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Modak&family=Monoton&family=Nosifer&family=Press+Start+2P&family=Rubik+Beastly&family=Rubik+Spray+Paint&family=Rubik+Wet+Paint&family=Ruslan+Display&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #660066;
+}
+body header {
+  width: 30vw;
+  height: 100vh;
+  background-color: #300047;
+  font-family: "Rubik Spray Paint", cursive;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header ul {
+  width: 70%;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header ul nav {
+  height: 85%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body header ul nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+body header ul nav li a {
+  font-size: 150%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+body header ul nav li:hover a {
+  font-size: 180%;
+}
+body #cont section {
+  width: 70vw;
+  height: 100vh;
+  float: right;
+}
+body #cont #in {
+  font-family: "Nosifer", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #cont #pro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+body #cont #pro h1 {
+  font-family: "Nosifer", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/4;
+}
+body #cont #pro div {
+  background-color: #300047;
+  margin: 5%;
+  padding: 5%;
+  overflow: hidden;
+}
+body #cont #pro div img {
+  width: 100%;
+  transition: all 0.5s;
+}
+body #cont #pro div b {
+  font-family: "Rubik Wet Paint", cursive;
+  font-size: 150%;
+  margin-top: 10%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+body #cont #pro div a {
+  margin-top: 5%;
+  font-family: "Rubik Spray Paint", cursive;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+body #cont #pro div a .icon {
+  margin-right: 2%;
+}
+body #cont #pro div a:hover {
+  transform: scale(1.1);
+}
+body #cont #pro img:hover {
+  transform: scale(1.1);
+}
+body #cont #len {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #cont #len h1 {
+  font-family: "Nosifer", cursive;
+  display: flex;
+  grid-column: 1/4;
+}
+body #cont #len #len_cont {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #cont #len #len_cont #len_cont_cont {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+body #cont #len #len_cont #len_cont_cont div {
+  display: flex;
+  flex-direction: column;
+  background-color: #300047;
+  align-items: center;
+  border-bottom: 5px solid #ffffff;
+  transition: all 0.3s;
+  margin: 5%;
+  padding: 10%;
+}
+body #cont #len #len_cont #len_cont_cont div img {
+  width: 100%;
+  transition: all 0.5s;
+}
+body #cont #len #len_cont #len_cont_cont div img:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+body #cont #len #len_cont #len_cont_cont div b {
+  font-family: "Rubik Wet Paint", cursive;
+  margin-top: 15%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+body #cont #tec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #cont #tec h1 {
+  font-family: "Nosifer", cursive;
+  display: flex;
+  grid-column: 1/4;
+}
+body #cont #tec #tec_cont {
+  width: 100%;
+}
+body #cont #tec #tec_cont #tec_cont_cont {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+body #cont #tec #tec_cont #tec_cont_cont div {
+  display: flex;
+  flex-direction: column;
+  background-color: #300047;
+  align-items: center;
+  border-bottom: 5px solid #ffffff;
+  transition: all 0.3s;
+  margin: 5%;
+  padding: 10%;
+}
+body #cont #tec #tec_cont #tec_cont_cont div img {
+  width: 100%;
+  transition: all 0.5s;
+}
+body #cont #tec #tec_cont #tec_cont_cont div img:hover {
+  transform: scale(1.1);
+}
+body #cont #tec #tec_cont #tec_cont_cont div b {
+  font-family: "Rubik Wet Paint", cursive;
+  margin-top: 15%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+body #cont #con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #cont #con h1 {
+  font-family: "Nosifer", cursive;
+  display: flex;
+}
+body #cont #con div {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #cont #con div a {
+  font-family: "Rubik Wet Paint", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  font-size: 200%;
+  background-color: #300047;
+  margin: 3%;
+  padding: 3%;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+body #cont #con div a .icon {
+  font-size: 140%;
+  margin-right: 2%;
+}
+body #cont #con div a:hover {
+  padding: 3.5%;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,238 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Modak&family=Monoton&family=Nosifer&family=Press+Start+2P&family=Rubik+Beastly&family=Rubik+Spray+Paint&family=Rubik+Wet+Paint&family=Ruslan+Display&display=swap');
+* {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #660066;
+    header {
+        width: 30vw;
+        height: 100vh;
+        background-color: #300047;
+        font-family: 'Rubik Spray Paint', cursive;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+            width: 70%;
+            height: 70%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            nav {
+                height: 85%;
+                padding: 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    list-style: none;
+                    a {
+                        font-size: 150%;
+                        color: $Blanco;
+                        text-decoration: none;
+                        transition: all 0.2s;
+                    }
+                }
+                li:hover {
+                    a {
+                        font-size: 180%;
+                    }
+                }
+            }
+        }
+    }
+    #cont {
+        section {
+            width: 70vw;
+            height: 100vh;
+            float: right;
+        }
+        #in {
+            font-family: 'Nosifer', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #pro {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            h1 {
+                font-family: 'Nosifer', cursive;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-column: 1/4;
+            }
+            div {
+                background-color: #300047;
+                margin: 5%;
+                padding: 5%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    transition: all 0.5s;
+                }
+                b {
+                    font-family: 'Rubik Wet Paint', cursive;
+                    font-size: 150%;
+                    margin-top: 10%;
+                    color: $Blanco;
+                    display: flex;
+                    justify-content: center;
+                }
+                a {
+                    margin-top: 5%;
+                    font-family: 'Rubik Spray Paint', cursive;
+                    display: flex;
+                    justify-content: center;
+                    color: $Blanco;
+                    text-decoration: none;
+                    transition: all 0.2s;
+                    .icon {
+                        margin-right: 2%;
+                    }
+                }
+                a:hover {
+                    transform: scale(1.1);
+                }
+            }
+                img:hover {
+                    transform: scale(1.1);
+                }
+        }
+        #len {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                font-family: 'Nosifer', cursive;
+                display: flex;
+                grid-column: 1/4;
+            }
+            #len_cont {
+                height: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                #len_cont_cont {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(5,1fr);
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #300047;
+                        align-items: center;
+                        border-bottom: 5px solid $Blanco;
+                        transition: all 0.3s;
+                        margin: 5%;
+                        padding: 10%;
+                        img {
+                            width: 100%;
+                            transition: all 0.5s;
+                        }
+                        img:hover {
+                            transform: scale(1.1) rotate(3deg);
+                        }
+                        b {
+                            font-family: 'Rubik Wet Paint', cursive;
+                            margin-top: 15%;
+                            color: $Blanco;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+        #tec {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                font-family: 'Nosifer', cursive;
+                display: flex;
+                grid-column: 1/4;
+            }
+            #tec_cont {
+                width: 100%;
+                #tec_cont_cont {
+                    display: grid;
+                    grid-template-columns: repeat(6,1fr);
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #300047;
+                        align-items: center;
+                        border-bottom: 5px solid $Blanco;
+                        transition: all 0.3s;
+                        margin: 5%;
+                        padding: 10%;
+                        img {
+                            width: 100%;
+                            transition: all 0.5s;
+                        }
+                        img:hover {
+                            transform: scale(1.1);
+                        }
+                        b {
+                            font-family: 'Rubik Wet Paint', cursive;
+                            margin-top: 15%;
+                            color: $Blanco;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+        #con {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                font-family: 'Nosifer', cursive;
+                display: flex;
+            }
+            div {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                            font-family: 'Rubik Wet Paint', cursive;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5%;
+                    font-size: 200%;
+                    background-color: #300047;
+                    margin: 3%;
+                    padding: 3%;
+                    text-decoration: none;
+                    color: $Blanco;
+                    transition: all 0.5s;
+                    .icon {
+                        font-size: 140%;
+                        margin-right: 2%;
+                    }
+                }
+                a:hover {
+                    padding: 3.5%;
+                }
+            }
+        }
+    }
+}
