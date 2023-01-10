@@ -1,3 +1,9 @@
+//Crarga
+window.onload = function () {
+    var contenedor = document.getElementById('logo_load');
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity = '0';
+}
 //Animaciones
 window.addEventListener('scroll', function(){
     let animacion = document.getElementById("len_cont");
