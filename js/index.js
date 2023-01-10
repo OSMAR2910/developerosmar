@@ -41,6 +41,11 @@ window.addEventListener('scroll', function(){
         animacion.style.animation = "lef 2.5s ease-out"
     }
 })
+//Aniscroll nav
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("abajo", window.scrollY>0);
+})
 //Cursor
 function isTouchDevice() {
 	return (('ontouchstart' in window) ||

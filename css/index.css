@@ -217,13 +217,7 @@ html {
   cursor: none !important;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-html body {
-  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-}
-html body header {
+header {
   width: 30vw;
   height: 100vh;
   background-color: #300047;
@@ -234,7 +228,7 @@ html body header {
   align-items: center;
   z-index: 100;
 }
-html body header ul {
+header ul {
   width: 70%;
   height: 70%;
   margin: 0;
@@ -243,28 +237,80 @@ html body header ul {
   justify-content: center;
   align-items: center;
 }
-html body header ul nav {
+header ul nav {
   height: 85%;
   padding: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-html body header ul nav li {
+header ul nav li {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   list-style: none;
 }
-html body header ul nav li a {
+header ul nav li a {
   font-size: 150%;
   color: #ffffff;
   text-decoration: none;
   transition: all 0.2s;
 }
-html body header ul nav li:hover a {
+header ul nav li:hover a {
   font-size: 180%;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100vw;
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    transition: all 0.5s;
+    z-index: 100;
+  }
+  header ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  header ul nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  header ul nav li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+  header ul nav li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 60%;
+  }
+  header ul nav li:hover a {
+    font-size: 65%;
+  }
+  header.abajo {
+    background-color: #300047;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 html body #cont section {
   width: 70vw;
@@ -349,6 +395,7 @@ html body #cont #len h1 {
   grid-column: 1/4;
 }
 html body #cont #len #len_cont {
+  width: 97%;
   height: 50%;
   display: flex;
   align-items: center;
@@ -402,11 +449,17 @@ html body #cont #tec h1 {
   grid-column: 1/4;
 }
 html body #cont #tec .tec_cont {
-  width: 100%;
+  width: 97%;
 }
 html body #cont #tec .tec_cont .tec_cont_cont {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+}
+html body #cont #tec .tec_cont .tec_cont_cont #sass {
+  grid-column: 4/5;
+}
+html body #cont #tec .tec_cont .tec_cont_cont #react {
+  grid-column: 3/4;
 }
 html body #cont #tec .tec_cont .tec_cont_cont div {
   display: flex;
@@ -486,4 +539,146 @@ html body #cont #con #con_cont ul li a .icon {
 }
 html body #cont #con #con_cont ul li a:hover {
   padding: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  html body #cont section {
+    width: 100vw;
+    height: 100vh;
+    float: none;
+  }
+  html body #cont #in {
+    background-image: url("../img/woman/img7.png");
+    background-size: 70%;
+    background-position: 100% 90%;
+  }
+  html body #cont #pro {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  html body #cont #pro h1 {
+    margin-top: 25%;
+    grid-column: 1/3;
+  }
+  html body #cont #pro div {
+    margin: 2%;
+  }
+  html body #cont #pro div b {
+    font-size: 120%;
+  }
+  html body #cont #pro div a {
+    font-size: 90%;
+  }
+  html body #cont #len {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    background-size: 50%;
+    background-position: 15% 15%;
+  }
+  html body #cont #len h1 {
+    grid-column: 1/4;
+  }
+  html body #cont #len #len_cont {
+    height: 75%;
+  }
+  html body #cont #len #len_cont #len_cont_cont {
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  html body #cont #len #len_cont #len_cont_cont div {
+    margin: 1%;
+  }
+  html body #cont #len #len_cont #len_cont_cont div img {
+    width: 70%;
+  }
+  html body #cont #tec {
+    background-image: url("../img/woman/img4.png");
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: 115% 25%;
+  }
+  html body #cont #tec h1 {
+    grid-column: 1/4;
+  }
+  html body #cont #tec .tec_cont {
+    width: 100%;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont #sass {
+    grid-column: 2/3;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont #react {
+    grid-column: 1/2;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont div {
+    margin: 2%;
+  }
+  html body #cont #con {
+    background-image: url("../img/woman/img5.png");
+    background-size: 60%;
+    background-position: 100% 100%;
+  }
+  html body #cont #con h1 {
+    margin-top: -45%;
+  }
+  html body #cont #con #con_cont {
+    width: 100%;
+    height: 45%;
+  }
+  html body #cont #con #con_cont ul {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  html body #cont #con #con_cont ul li {
+    height: 100%;
+    margin: 2.5%;
+  }
+  html body #cont #con #con_cont ul li a {
+    border-radius: 1rem;
+  }
+  html body #cont #con #con_cont ul li a:hover {
+    padding: 1.1rem;
+  }
+}
+@media screen and (max-height: 650px) {
+  html body #cont #in {
+    background-position: 115% 90%;
+  }
+  html body #cont #pro div b {
+    font-size: 110%;
+  }
+  html body #cont #pro div a {
+    font-size: 80%;
+  }
+  html body #cont #len #len_cont #len_cont_cont div img {
+    width: 50%;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont div img {
+    width: 70%;
+  }
+  html body #cont #con h1 {
+    margin-top: -45%;
+  }
+  html body #cont #con #con_cont {
+    width: 100%;
+    height: 45%;
+  }
+  html body #cont #con #con_cont ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  html body #cont #con #con_cont ul li {
+    height: 100%;
+    margin: 2%;
+  }
+  html body #cont #con #con_cont ul li a {
+    font-size: 140%;
+  }
 }/*# sourceMappingURL=index.css.map */
