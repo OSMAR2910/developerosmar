@@ -14,8 +14,9 @@ $Transparente: rgba(255, 255, 255, 0);
 $Morado: #660066;
 $Morado2: #300047;
 
-$Primario: $Morado;
+$Primario: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 $Secundario: $Morado2;
+$h1: #f5e3fd;
 
 /*Tipos de letra*/
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Modak&family=Monoton&family=Nosifer&family=Press+Start+2P&family=Rubik+Beastly&family=Rubik+Spray+Paint&family=Rubik+Wet+Paint&family=Ruslan+Display&display=swap');

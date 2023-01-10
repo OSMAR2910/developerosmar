@@ -1,10 +1,10 @@
-@import "animaciones";
 @import "variables";
-* {
+@import "animaciones";
+@import "cursor";
+html {
     scroll-behavior: smooth;
-}
-body {
-    background-color: $Primario;
+    body {
+    background-image: $Primario;
     header {
         width: 30vw;
         height: 100vh;
@@ -66,6 +66,7 @@ body {
             background-position: 105% 50%;
             h1 {
                 font-family: 'Nosifer', cursive;
+                color: $h1;
             }
         }
         #pro {
@@ -73,6 +74,7 @@ body {
             grid-template-columns: repeat(3,1fr);
             h1 {
                 font-family: 'Nosifer', cursive;
+                color: $h1;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -126,6 +128,7 @@ body {
             background-position: 15% 15%;
             h1 {
                 font-family: 'Nosifer', cursive;
+                color: $h1;
                 display: flex;
                 grid-column: 1/4;
             }
@@ -177,6 +180,7 @@ body {
             background-position: 110% 10%;
             h1 {
                 font-family: 'Nosifer', cursive;
+                color: $h1;
                 display: flex;
                 grid-column: 1/4;
             }
@@ -224,6 +228,7 @@ body {
             h1 {
                 margin-top: -15%;
                 font-family: 'Nosifer', cursive;
+                color: $h1;
                 display: flex;
             }
             #con_cont {
@@ -267,4 +272,5 @@ body {
             }
         }
     }
+}
 }
