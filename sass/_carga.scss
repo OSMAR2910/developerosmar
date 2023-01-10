@@ -44,8 +44,11 @@
     #logo_load{
         #cargando {
             #circulo {
-                width: 5rem;
-                height: 5rem;
+                span {
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    margin: 5%;
+                }
             }
         }
     }
@@ -54,10 +57,9 @@
     #logo_load{
         #cargando {
             #circulo {
-                width: 3rem;
-                height: 3rem;
-                img {
-                    width: 3rem;
+                span {
+                    width: 0.6rem;
+                    height: 0.6rem;
                 }
             }
         }
