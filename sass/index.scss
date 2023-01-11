@@ -27,52 +27,55 @@ body {
             }
         }
         #pro {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            h1 {
-                font-family: 'Nosifer', cursive;
-                color: $h1;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-column: 1/4;
-            }
-            div {
-                background-color: $Secundario;
+            #pro_cont {
                 margin: 5%;
-                padding: 5%;
-                overflow: hidden;
-                img {
-                    width: 100%;
-                    transition: all 0.5s;
-                }
-                b {
-                    font-family: 'Rubik Wet Paint', cursive;
-                    font-size: 150%;
-                    margin-top: 10%;
-                    color: $Blanco;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                h1 {
+                    font-family: 'Nosifer', cursive;
+                    color: $h1;
                     display: flex;
                     justify-content: center;
+                    align-items: center;
+                    grid-column: 1/4;
                 }
-                a {
-                    margin-top: 5%;
-                    font-family: 'Rubik Spray Paint', cursive;
-                    display: flex;
-                    justify-content: center;
-                    color: $Blanco;
-                    text-decoration: none;
-                    transition: all 0.2s;
-                    .icon {
-                        margin-right: 2%;
+                div {
+                    background-color: $Secundario;
+                    margin: 5%;
+                    padding: 5%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        transition: all 0.5s;
+                    }
+                    b {
+                        font-family: 'Rubik Wet Paint', cursive;
+                        font-size: 150%;
+                        margin-top: 10%;
+                        color: $Blanco;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    a {
+                        margin-top: 5%;
+                        font-family: 'Rubik Spray Paint', cursive;
+                        display: flex;
+                        justify-content: center;
+                        color: $Blanco;
+                        text-decoration: none;
+                        transition: all 0.2s;
+                        .icon {
+                            margin-right: 2%;
+                        }
+                    }
+                    a:hover {
+                        transform: scale(1.1);
                     }
                 }
-                a:hover {
-                    transform: scale(1.1);
-                }
+                    img:hover {
+                        transform: scale(1.1);
+                    }
             }
-                img:hover {
-                    transform: scale(1.1);
-                }
         }
         #len {
             display: flex;
@@ -95,7 +98,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                animation: len 3s 1;
+                animation: len 1s 1;
                 #len_cont_cont {
                     width: 100%;
                     display: grid;
@@ -238,83 +241,32 @@ body {
     }
 }
 }
-@media screen and (max-height: 650px) {
-html {
-body {
-    #cont {
-        #in {
-            background-position: 115% 90%;
-        }
-        #pro {
-            div {
-                b {
-                    font-size: 110%;
-                }
-                a {
-                    font-size: 80%;
-                }
-            }
-        }
-        #len {
-            #len_cont {
-                #len_cont_cont {
-                    div {
-                        img {
-                            width: 50%;
-                        }
-                    }
-                }
-            }
-        }
-        #tec {
-            h1 {
-            }
-            .tec_cont {
-                .tec_cont_cont {
-                    div {
-                        img {
-                            width: 70%;
-                        }
-                    }
-                }
-            }
-        }
-        #con {
-            h1 {
-                margin-top: -45%;
-            }
-            #con_cont {
-                width: 100%;
-                height: 45%;
-                ul {
-                    width: 100%;
-                    height: 100%;
-                    flex-direction: column;
-                    li {
-                        height: 100%;
-                        margin: 2%;
-                        a {
-                            font-size: 140%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-}    
-}
 @media screen and (max-width: 850px) {
 html {
 body {
     #cont {
+        #in {
+            background-size: 70%;
+            background-position: 110% 90%;
+        }
         #pro {
-            div {
-                b {
-                    font-size: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            #pro_cont {
+                height: 65%;
+                grid-template-columns: repeat(2,1fr);
+                margin: 5%;
+                h1 {
+                    grid-column: 1/3;
                 }
-                a {
-                    font-size: 70%;
+                div {
+                    b {
+                        font-size: 90%;
+                    }
+                    a {
+                        font-size: 70%;
+                    }
                 }
             }
         }
@@ -332,7 +284,7 @@ body {
         }
         #tec {
             background-size: 40%;
-            background-position: 100% 5%;
+            background-position: 65% 25%;
             h1 {
                 font-family: 'Nosifer', cursive;
                 color: $h1;
@@ -343,12 +295,12 @@ body {
                 width: 97%;
                 .tec_cont_cont {
                     display: grid;
-                    grid-template-columns: repeat(4,1fr);
+                    grid-template-columns: repeat(3,1fr);
                     #sass {
                         grid-column: 3/4;
                     }
                     #react {
-                        grid-column: 2/3;
+                        grid-column: 1/2;
                     }
                     div {
                         display: flex;
@@ -378,12 +330,17 @@ body {
             }
         }
         #con {
+            background-image: url("../img/woman/img5.png");
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
             h1 {
                 margin-top: -45%;
             }
             #con_cont {
                 width: 100%;
                 height: 45%;
+                margin-top: 5%;
                 ul {
                     width: 100%;
                     height: 100%;
@@ -392,13 +349,13 @@ body {
                         height: 100%;
                         margin: 2%;
                         a {
-                            font-size: 140%;
+                            font-size: 270%;
                         }
                     }
                 }
             }
         }
-    }
+}
 }
 }
 }
@@ -417,18 +374,28 @@ body {
             background-position: 100% 90%;
         }
         #pro {
-            grid-template-columns: repeat(2,1fr);
-            h1 {
-                margin-top: 25%;
-                grid-column: 1/3;
-            }
-            div {
-                margin: 2%;
-                b {
-                    font-size: 120%;
+            #pro_cont {
+                grid-template-columns: repeat(2,1fr);
+                margin: 0;
+                h1 {
+                    grid-column: 1/3;
                 }
-                a {
-                    font-size: 90%;
+                div {
+                    b {
+                        font-family: 'Rubik Wet Paint', cursive;
+                        font-size: 80%;
+                        margin-top: 10%;
+                        color: $Blanco;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    a {
+                        font-size: 60%;
+                        margin-top: 5%;
+                        .icon {
+                            margin-right: 3%;
+                        }
+                    }
                 }
             }
         }
@@ -482,11 +449,69 @@ body {
 }
 }
 }
-
-
-
-
-
-
-
-
+@media screen and (max-height: 650px) {
+html {
+body {
+    #cont {
+        #in {
+            background-position: 115% 90%;
+        }
+        #pro {
+            div {
+                b {
+                    font-size: 110%;
+                }
+                a {
+                    font-size: 80%;
+                }
+            }
+        }
+        #len {
+            #len_cont {
+                #len_cont_cont {
+                    div {
+                        img {
+                            width: 55%;
+                        }
+                    }
+                }
+            }
+        }
+        #tec {
+            h1 {
+            }
+            .tec_cont {
+                .tec_cont_cont {
+                    div {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+        #con {
+            h1 {
+                margin-top: -45%;
+            }
+            #con_cont {
+                width: 100%;
+                height: 45%;
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    li {
+                        height: 100%;
+                        margin: 2%;
+                        a {
+                            font-size: 140%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}    
+}

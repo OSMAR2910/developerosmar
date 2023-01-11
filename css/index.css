@@ -339,6 +339,14 @@ header ul nav li:hover a {
   font-size: 180%;
 }
 
+@media screen and (max-width: 850px) {
+  header ul a {
+    width: 100%;
+  }
+  header ul a img {
+    width: 85%;
+  }
+}
 @media screen and (max-width: 500px) {
   header {
     background-color: rgba(0, 0, 0, 0);
@@ -419,11 +427,12 @@ html body #cont #in h1 {
   font-family: "Nosifer", cursive;
   color: #f5e3fd;
 }
-html body #cont #pro {
+html body #cont #pro #pro_cont {
+  margin: 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-html body #cont #pro h1 {
+html body #cont #pro #pro_cont h1 {
   font-family: "Nosifer", cursive;
   color: #f5e3fd;
   display: flex;
@@ -431,17 +440,17 @@ html body #cont #pro h1 {
   align-items: center;
   grid-column: 1/4;
 }
-html body #cont #pro div {
+html body #cont #pro #pro_cont div {
   background-color: #300047;
   margin: 5%;
   padding: 5%;
   overflow: hidden;
 }
-html body #cont #pro div img {
+html body #cont #pro #pro_cont div img {
   width: 100%;
   transition: all 0.5s;
 }
-html body #cont #pro div b {
+html body #cont #pro #pro_cont div b {
   font-family: "Rubik Wet Paint", cursive;
   font-size: 150%;
   margin-top: 10%;
@@ -449,7 +458,7 @@ html body #cont #pro div b {
   display: flex;
   justify-content: center;
 }
-html body #cont #pro div a {
+html body #cont #pro #pro_cont div a {
   margin-top: 5%;
   font-family: "Rubik Spray Paint", cursive;
   display: flex;
@@ -458,13 +467,13 @@ html body #cont #pro div a {
   text-decoration: none;
   transition: all 0.2s;
 }
-html body #cont #pro div a .icon {
+html body #cont #pro #pro_cont div a .icon {
   margin-right: 2%;
 }
-html body #cont #pro div a:hover {
+html body #cont #pro #pro_cont div a:hover {
   transform: scale(1.1);
 }
-html body #cont #pro img:hover {
+html body #cont #pro #pro_cont img:hover {
   transform: scale(1.1);
 }
 html body #cont #len {
@@ -489,8 +498,8 @@ html body #cont #len #len_cont {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-animation: len 3s 1;
-          animation: len 3s 1;
+  -webkit-animation: len 1s 1;
+          animation: len 1s 1;
 }
 html body #cont #len #len_cont #len_cont_cont {
   width: 100%;
@@ -630,47 +639,28 @@ html body #cont #con #con_cont ul li a:hover {
   padding: 1.5rem;
 }
 
-@media screen and (max-height: 650px) {
-  html body #cont #in {
-    background-position: 115% 90%;
-  }
-  html body #cont #pro div b {
-    font-size: 110%;
-  }
-  html body #cont #pro div a {
-    font-size: 80%;
-  }
-  html body #cont #len #len_cont #len_cont_cont div img {
-    width: 50%;
-  }
-  html body #cont #tec .tec_cont .tec_cont_cont div img {
-    width: 70%;
-  }
-  html body #cont #con h1 {
-    margin-top: -45%;
-  }
-  html body #cont #con #con_cont {
-    width: 100%;
-    height: 45%;
-  }
-  html body #cont #con #con_cont ul {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-  }
-  html body #cont #con #con_cont ul li {
-    height: 100%;
-    margin: 2%;
-  }
-  html body #cont #con #con_cont ul li a {
-    font-size: 140%;
-  }
-}
 @media screen and (max-width: 850px) {
-  html body #cont #pro div b {
-    font-size: 100%;
+  html body #cont #in {
+    background-size: 70%;
+    background-position: 110% 90%;
   }
-  html body #cont #pro div a {
+  html body #cont #pro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body #cont #pro #pro_cont {
+    height: 65%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5%;
+  }
+  html body #cont #pro #pro_cont h1 {
+    grid-column: 1/3;
+  }
+  html body #cont #pro #pro_cont div b {
+    font-size: 90%;
+  }
+  html body #cont #pro #pro_cont div a {
     font-size: 70%;
   }
   html body #cont #len {
@@ -685,7 +675,7 @@ html body #cont #con #con_cont ul li a:hover {
   }
   html body #cont #tec {
     background-size: 40%;
-    background-position: 100% 5%;
+    background-position: 65% 25%;
   }
   html body #cont #tec h1 {
     font-family: "Nosifer", cursive;
@@ -698,13 +688,13 @@ html body #cont #con #con_cont ul li a:hover {
   }
   html body #cont #tec .tec_cont .tec_cont_cont {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   html body #cont #tec .tec_cont .tec_cont_cont #sass {
     grid-column: 3/4;
   }
   html body #cont #tec .tec_cont .tec_cont_cont #react {
-    grid-column: 2/3;
+    grid-column: 1/2;
   }
   html body #cont #tec .tec_cont .tec_cont_cont div {
     display: flex;
@@ -730,12 +720,19 @@ html body #cont #con #con_cont ul li a:hover {
     display: flex;
     justify-content: center;
   }
+  html body #cont #con {
+    background-image: url("../img/woman/img5.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
   html body #cont #con h1 {
     margin-top: -45%;
   }
   html body #cont #con #con_cont {
     width: 100%;
     height: 45%;
+    margin-top: 5%;
   }
   html body #cont #con #con_cont ul {
     width: 100%;
@@ -747,7 +744,7 @@ html body #cont #con #con_cont ul li a:hover {
     margin: 2%;
   }
   html body #cont #con #con_cont ul li a {
-    font-size: 140%;
+    font-size: 270%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -761,21 +758,27 @@ html body #cont #con #con_cont ul li a:hover {
     background-size: 70%;
     background-position: 100% 90%;
   }
-  html body #cont #pro {
+  html body #cont #pro #pro_cont {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0;
   }
-  html body #cont #pro h1 {
-    margin-top: 25%;
+  html body #cont #pro #pro_cont h1 {
     grid-column: 1/3;
   }
-  html body #cont #pro div {
-    margin: 2%;
+  html body #cont #pro #pro_cont div b {
+    font-family: "Rubik Wet Paint", cursive;
+    font-size: 80%;
+    margin-top: 10%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
   }
-  html body #cont #pro div b {
-    font-size: 120%;
+  html body #cont #pro #pro_cont div a {
+    font-size: 60%;
+    margin-top: 5%;
   }
-  html body #cont #pro div a {
-    font-size: 90%;
+  html body #cont #pro #pro_cont div a .icon {
+    margin-right: 3%;
   }
   html body #cont #len {
     display: flex;
@@ -822,5 +825,41 @@ html body #cont #con #con_cont ul li a:hover {
   }
   html body #cont #tec .tec_cont .tec_cont_cont div {
     margin: 2%;
+  }
+}
+@media screen and (max-height: 650px) {
+  html body #cont #in {
+    background-position: 115% 90%;
+  }
+  html body #cont #pro div b {
+    font-size: 110%;
+  }
+  html body #cont #pro div a {
+    font-size: 80%;
+  }
+  html body #cont #len #len_cont #len_cont_cont div img {
+    width: 55%;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont div img {
+    width: 70%;
+  }
+  html body #cont #con h1 {
+    margin-top: -45%;
+  }
+  html body #cont #con #con_cont {
+    width: 100%;
+    height: 45%;
+  }
+  html body #cont #con #con_cont ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  html body #cont #con #con_cont ul li {
+    height: 100%;
+    margin: 2%;
+  }
+  html body #cont #con #con_cont ul li a {
+    font-size: 140%;
   }
 }/*# sourceMappingURL=index.css.map */
