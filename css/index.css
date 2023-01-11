@@ -630,6 +630,126 @@ html body #cont #con #con_cont ul li a:hover {
   padding: 1.5rem;
 }
 
+@media screen and (max-height: 650px) {
+  html body #cont #in {
+    background-position: 115% 90%;
+  }
+  html body #cont #pro div b {
+    font-size: 110%;
+  }
+  html body #cont #pro div a {
+    font-size: 80%;
+  }
+  html body #cont #len #len_cont #len_cont_cont div img {
+    width: 50%;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont div img {
+    width: 70%;
+  }
+  html body #cont #con h1 {
+    margin-top: -45%;
+  }
+  html body #cont #con #con_cont {
+    width: 100%;
+    height: 45%;
+  }
+  html body #cont #con #con_cont ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  html body #cont #con #con_cont ul li {
+    height: 100%;
+    margin: 2%;
+  }
+  html body #cont #con #con_cont ul li a {
+    font-size: 140%;
+  }
+}
+@media screen and (max-width: 850px) {
+  html body #cont #pro div b {
+    font-size: 100%;
+  }
+  html body #cont #pro div a {
+    font-size: 70%;
+  }
+  html body #cont #len {
+    background-size: 50%;
+    background-position: 100% 100%;
+  }
+  html body #cont #len h1 {
+    grid-column: 1/3;
+  }
+  html body #cont #len #len_cont #len_cont_cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  html body #cont #tec {
+    background-size: 40%;
+    background-position: 100% 5%;
+  }
+  html body #cont #tec h1 {
+    font-family: "Nosifer", cursive;
+    color: #f5e3fd;
+    display: flex;
+    grid-column: 1/4;
+  }
+  html body #cont #tec .tec_cont {
+    width: 97%;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont #sass {
+    grid-column: 3/4;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont #react {
+    grid-column: 2/3;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont div {
+    display: flex;
+    flex-direction: column;
+    background-color: #300047;
+    align-items: center;
+    border-bottom: 5px solid #ffffff;
+    transition: all 0.3s;
+    margin: 5%;
+    padding: 10%;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont div img {
+    width: 100%;
+    transition: all 0.5s;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont div img:hover {
+    transform: scale(1.1);
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont div b {
+    font-family: "Rubik Wet Paint", cursive;
+    margin-top: 15%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  html body #cont #con h1 {
+    margin-top: -45%;
+  }
+  html body #cont #con #con_cont {
+    width: 100%;
+    height: 45%;
+  }
+  html body #cont #con #con_cont ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  html body #cont #con #con_cont ul li {
+    height: 100%;
+    margin: 2%;
+  }
+  html body #cont #con #con_cont ul li a {
+    font-size: 140%;
+  }
+}
 @media screen and (max-width: 500px) {
   html body #cont section {
     width: 100vw;
@@ -684,12 +804,9 @@ html body #cont #con #con_cont ul li a:hover {
   }
   html body #cont #tec {
     background-image: url("../img/woman/img4.png");
-    background-size: 35%;
+    background-size: 40%;
     background-repeat: no-repeat;
-    background-position: 115% 25%;
-  }
-  html body #cont #tec h1 {
-    grid-column: 1/4;
+    background-position: 70% 25%;
   }
   html body #cont #tec .tec_cont {
     width: 100%;
@@ -698,76 +815,12 @@ html body #cont #con #con_cont ul li a:hover {
     grid-template-columns: repeat(3, 1fr);
   }
   html body #cont #tec .tec_cont .tec_cont_cont #sass {
-    grid-column: 2/3;
+    grid-column: 3/4;
   }
   html body #cont #tec .tec_cont .tec_cont_cont #react {
     grid-column: 1/2;
   }
   html body #cont #tec .tec_cont .tec_cont_cont div {
     margin: 2%;
-  }
-  html body #cont #con {
-    background-image: url("../img/woman/img5.png");
-    background-size: 60%;
-    background-position: 100% 100%;
-  }
-  html body #cont #con h1 {
-    margin-top: -45%;
-  }
-  html body #cont #con #con_cont {
-    width: 100%;
-    height: 45%;
-  }
-  html body #cont #con #con_cont ul {
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  html body #cont #con #con_cont ul li {
-    height: 100%;
-    margin: 2.5%;
-  }
-  html body #cont #con #con_cont ul li a {
-    border-radius: 1rem;
-  }
-  html body #cont #con #con_cont ul li a:hover {
-    padding: 1.1rem;
-  }
-}
-@media screen and (max-height: 650px) {
-  html body #cont #in {
-    background-position: 115% 90%;
-  }
-  html body #cont #pro div b {
-    font-size: 110%;
-  }
-  html body #cont #pro div a {
-    font-size: 80%;
-  }
-  html body #cont #len #len_cont #len_cont_cont div img {
-    width: 50%;
-  }
-  html body #cont #tec .tec_cont .tec_cont_cont div img {
-    width: 70%;
-  }
-  html body #cont #con h1 {
-    margin-top: -45%;
-  }
-  html body #cont #con #con_cont {
-    width: 100%;
-    height: 45%;
-  }
-  html body #cont #con #con_cont ul {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-  }
-  html body #cont #con #con_cont ul li {
-    height: 100%;
-    margin: 2%;
-  }
-  html body #cont #con #con_cont ul li a {
-    font-size: 140%;
   }
 }/*# sourceMappingURL=index.css.map */
