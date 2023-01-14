@@ -234,7 +234,7 @@ html {
   --color-white: #ffffff;
   --color-black: #191919;
   --color-bg: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-  --color-a: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+  --color-a: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
   box-sizing: border-box;
 }
 
@@ -248,7 +248,7 @@ html {
   transform: translate(var(--cursor-x, -100px), var(--cursor-y, -100px)) translateZ(0);
   pointer-events: none;
   transition: none;
-  z-index: 11000;
+  z-index: 15000;
   will-change: transform;
 }
 .is-debug .c-cursor {
@@ -408,6 +408,127 @@ html {
 }
 html body {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+html body #modal {
+  width: 30rem;
+  height: 40rem;
+  margin-left: 50%;
+  padding: 0;
+  border: 0;
+  border-radius: 1rem;
+  color: #ffffff;
+}
+html body #modal #modal_cont {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+html body #modal #modal_cont button {
+  width: 2rem;
+  height: 2rem;
+  color: #0d0d0d;
+  margin-top: 6px;
+  margin-left: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  font-size: 150%;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border: 0;
+  z-index: 100;
+}
+html body #modal #modal_cont a {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 1rem;
+  font-size: 90%;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #300047;
+  padding: 1rem;
+  margin-top: 34rem;
+  margin-left: 0.5rem;
+}
+html body #modal #modal_cont a .icon {
+  font-size: 110%;
+  margin-right: 4%;
+}
+html body #modal #modal_cont #cont_name {
+  width: 80%;
+  height: 30%;
+  margin: 5% 0 0 10%;
+  position: absolute;
+  background-color: #300047;
+  padding: 2%;
+  border: 5px solid #ffffff;
+  border-radius: 1rem;
+}
+html body #modal #modal_cont #cont_name h1 {
+  font-size: 100%;
+}
+html body #modal #modal_cont #cont_name div {
+  width: 100%;
+  height: 70%;
+}
+html body #modal #modal_cont #cont_name div ul {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+html body #modal #modal_cont #cont_name div ul li {
+  width: 100%;
+  height: 12.5%;
+  list-style: none;
+  font-size: 70%;
+}
+html body #modal #modal_cont #cont_cip {
+  width: 30%;
+  height: 40rem;
+  background-color: #660066;
+  float: left;
+}
+html body #modal #modal_cont #cont_cip div {
+  margin-top: 20rem;
+}
+html body #modal #modal_cont #cont_cip div h2 {
+  text-align: center;
+  font-size: 75%;
+}
+html body #modal #modal_cont #cont_cip div ul li {
+  font-size: 70%;
+}
+html body #modal #modal_cont #cont_pfec {
+  width: 70%;
+  height: 40rem;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  float: right;
+}
+html body #modal #modal_cont #cont_pfec div {
+  padding: 0 5%;
+  text-align: center;
+  margin-top: 17rem;
+}
+html body #modal #modal_cont #cont_pfec div h2 {
+  font-size: 100%;
+}
+html body #modal #modal_cont #cont_pfec div h3 {
+  font-size: 90%;
+}
+html body #modal #modal_cont #cont_pfec div h4 {
+  font-size: 80%;
+}
+html body #modal::-webkit-backdrop {
+  background-color: rgba(0, 0, 0, 0.805);
+}
+html body #modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.805);
 }
 html body #cont section {
   width: 70vw;
@@ -635,11 +756,34 @@ html body #cont #con #con_cont ul li a .icon {
   font-size: 140%;
   margin-right: 4%;
 }
+html body #cont #con #con_cont ul li button {
+  align-items: center;
+  background-color: #300047;
+  font-family: "Rubik Wet Paint", cursive;
+  display: flex;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 200%;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.5s;
+  border: 0;
+}
+html body #cont #con #con_cont ul li button .icon {
+  font-size: 140%;
+  margin-right: 4%;
+}
 html body #cont #con #con_cont ul li a:hover {
+  padding: 1.5rem;
+}
+html body #cont #con #con_cont ul li button:hover {
   padding: 1.5rem;
 }
 
 @media screen and (max-width: 850px) {
+  html body #modal {
+    margin-left: auto;
+  }
   html body #cont #in {
     background-size: 70%;
     background-position: 110% 90%;
@@ -746,8 +890,56 @@ html body #cont #con #con_cont ul li a:hover {
   html body #cont #con #con_cont ul li a {
     font-size: 270%;
   }
+  html body #cont #con #con_cont ul li button {
+    font-size: 270%;
+  }
 }
 @media screen and (max-width: 500px) {
+  html body #modal {
+    width: 30rem;
+    height: 40rem;
+    margin-left: auto;
+  }
+  html body #modal #modal_cont a {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10%;
+    font-size: 200%;
+    margin-top: 35rem;
+    margin-left: 1.5rem;
+  }
+  html body #modal #modal_cont #cont_name {
+    width: 80%;
+    height: 30%;
+    margin: 5% 0 0 10%;
+    position: absolute;
+    background-color: #300047;
+    padding: 2%;
+    border: 5px solid #ffffff;
+    border-radius: 1rem;
+  }
+  html body #modal #modal_cont #cont_name h1 {
+    font-size: 85%;
+  }
+  html body #modal #modal_cont #cont_cip div h2 {
+    text-align: center;
+    font-size: 70%;
+  }
+  html body #modal #modal_cont #cont_cip div ul {
+    margin-left: -20%;
+  }
+  html body #modal #modal_cont #cont_cip div ul li {
+    font-size: 65%;
+  }
+  html body #modal #modal_cont #cont_pfec div h2 {
+    font-size: 100%;
+  }
+  html body #modal #modal_cont #cont_pfec div h3 {
+    font-size: 90%;
+  }
+  html body #modal #modal_cont #cont_pfec div h4 {
+    font-size: 80%;
+  }
   html body #cont section {
     width: 100vw;
     height: 100vh;
@@ -828,6 +1020,25 @@ html body #cont #con #con_cont ul li a:hover {
   }
 }
 @media screen and (max-height: 650px) {
+  html body #modal {
+    margin-left: auto;
+  }
+  html body #modal #modal_cont a {
+    margin-top: 33rem;
+    margin-left: 1rem;
+  }
+  html body #modal #modal_cont #cont_name h1 {
+    font-size: 80%;
+  }
+  html body #modal #modal_cont #cont_pfec div h2 {
+    font-size: 90%;
+  }
+  html body #modal #modal_cont #cont_pfec div h3 {
+    font-size: 80%;
+  }
+  html body #modal #modal_cont #cont_pfec div h4 {
+    font-size: 70%;
+  }
   html body #cont #in {
     background-position: 115% 90%;
   }
@@ -860,6 +1071,9 @@ html body #cont #con #con_cont ul li a:hover {
     margin: 2%;
   }
   html body #cont #con #con_cont ul li a {
+    font-size: 140%;
+  }
+  html body #cont #con #con_cont ul li button {
     font-size: 140%;
   }
 }/*# sourceMappingURL=index.css.map */

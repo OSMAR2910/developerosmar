@@ -4,6 +4,25 @@ window.onload = function () {
     contenedor.style.visibility = 'hidden';
     contenedor.style.opacity = '0';
 }
+//Cursor
+function isTouchDevice() {
+	return (('ontouchstart' in window) ||
+			  (navigator.maxTouchPoints > 0) ||
+			  (navigator.msMaxTouchPoints > 0));
+}
+//Modal1
+const abrirmodal = document.querySelector("#button_cv_abrir");
+const cerrarmodal = document.querySelector("#button_cv_cerrar");
+const modal = document.querySelector("#modal");
+
+abrirmodal.addEventListener("click",()=>{
+    modal.showModal();
+}
+)
+cerrarmodal.addEventListener("click",()=>{
+    modal.close();
+}
+)
 //Animaciones
 window.addEventListener('scroll', function(){
     let animacion = document.getElementById("len_cont");
@@ -46,12 +65,6 @@ window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
     header.classList.toggle("abajo", window.scrollY>0);
 })
-//Cursor
-function isTouchDevice() {
-	return (('ontouchstart' in window) ||
-			  (navigator.maxTouchPoints > 0) ||
-			  (navigator.msMaxTouchPoints > 0));
-}
 const isTouch = isTouchDevice();
 if (!isTouch){
 

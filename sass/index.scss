@@ -7,6 +7,126 @@ html {
     scroll-behavior: smooth;
 body {
     background-image: $Primario;
+    #modal {
+        width: 30rem;
+        height: 40rem;
+        margin-left: 50%;
+        padding: 0;
+        border: 0;
+        border-radius: 1rem;
+        color: $Blanco;
+        #modal_cont {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            button {
+                width: 2rem;
+                height: 2rem;
+                color: $Negro;
+                margin-top: 6px;
+                margin-left: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                font-size: 150%;
+                border-radius: 100%;
+                background-color: $Blanco;
+                border: 0;
+                z-index: 100;
+            }
+            a {
+                width: 6rem;
+                height: 2rem;
+                border-radius: 1rem;
+                font-size: 90%;
+                text-decoration: none;
+                color: $Blanco;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                background-color: $Morado2;
+                padding: 1rem;
+                margin-top: 34rem;
+                margin-left: 0.5rem;
+                .icon {
+                    font-size: 110%;
+                    margin-right: 4%;
+                }
+            }
+            #cont_name {
+                width: 80%;
+                height: 30%;
+                margin: 5% 0 0 10%;
+                position: absolute;
+                background-color: $Secundario;
+                padding: 2%;
+                border: 5px solid $Blanco;
+                border-radius: 1rem;
+                h1 {
+                    font-size: 100%;
+                }
+                div {
+                    width: 100%;
+                    height: 70%;
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            width: 100%;
+                            height: 12.5%;
+                            list-style: none;
+                            font-size: 70%;
+                        }
+                    }
+                }
+            }
+            #cont_cip {
+                width: 30%;
+                height: 40rem;
+                background-color: $Morado;
+                float: left;
+                div {
+                    margin-top: 20rem;
+                    h2 {
+                        text-align: center;
+                        font-size: 75%;
+                    }
+                    ul {
+                        li {
+                            font-size: 70%;
+                        }
+                    }
+                }
+            }
+            #cont_pfec {
+                width: 70%;
+                height: 40rem;
+                background-image: $Primario;
+                float: right;
+                div {
+                    padding: 0 5%;
+                    text-align: center;
+                    margin-top: 17rem;
+                    h2 {
+                        font-size: 100%;
+                    }
+                    h3 {
+                        font-size: 90%;
+                    }
+                    h4 {
+                        font-size: 80%;
+                    }
+                }
+            }
+        }
+    }
+    #modal::backdrop {
+        background-color:rgba(0, 0, 0, 0.805);
+    }
     #cont {
         section {
             width: 70vw;
@@ -231,7 +351,27 @@ body {
                                 margin-right: 4%;
                             }
                         }
+                        button {
+                            align-items: center;
+                            background-color: $Secundario;
+                            font-family: 'Rubik Wet Paint', cursive;
+                            display: flex;
+                            padding: 1rem;
+                            border-radius: 2rem;
+                            font-size: 200%;
+                            text-decoration: none;
+                            color: $Blanco;
+                            transition: all 0.5s;
+                            border: 0;
+                            .icon {
+                                font-size: 140%;
+                                margin-right: 4%;
+                            }
+                        }
                         a:hover {
+                            padding: 1.5rem;
+                        }
+                        button:hover {
                             padding: 1.5rem;
                         }
                     }
@@ -244,6 +384,9 @@ body {
 @media screen and (max-width: 850px) {
 html {
 body {
+    #modal {
+        margin-left: auto;
+    }
     #cont {
         #in {
             background-size: 70%;
@@ -351,6 +494,9 @@ body {
                         a {
                             font-size: 270%;
                         }
+                        button {
+                            font-size: 270%;
+                        }
                     }
                 }
             }
@@ -362,6 +508,61 @@ body {
 @media screen and (max-width: 500px) {
 html {
 body {
+    #modal {
+        width: 30rem;
+        height: 40rem;
+        margin-left: auto;
+        #modal_cont {
+            a {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 10%;
+                font-size: 200%;
+                margin-top: 35rem;
+                margin-left: 1.5rem;
+            }
+            #cont_name {
+                width: 80%;
+                height: 30%;
+                margin: 5% 0 0 10%;
+                position: absolute;
+                background-color: $Secundario;
+                padding: 2%;
+                border: 5px solid $Blanco;
+                border-radius: 1rem;
+                h1 {
+                    font-size: 85%;
+                }
+            }
+            #cont_cip {
+                div {
+                    h2 {
+                        text-align: center;
+                        font-size: 70%;
+                    }
+                    ul {
+                        margin-left: -20%;
+                        li {
+                            font-size: 65%;
+                        }
+                    }
+                }
+            }
+            #cont_pfec {
+                div {
+                    h2 {
+                        font-size: 100%;
+                    }
+                    h3 {
+                        font-size: 90%;
+                    }
+                    h4 {
+                        font-size: 80%;
+                    }
+                }
+            }
+        }
+    }
     #cont {
         section {
             width: 100vw;
@@ -452,6 +653,33 @@ body {
 @media screen and (max-height: 650px) {
 html {
 body {
+    #modal {
+        margin-left: auto;
+        #modal_cont {
+            a {
+                margin-top: 33rem;
+                margin-left: 1rem;
+            }
+            #cont_name {
+                h1 {
+                    font-size: 80%;
+                }
+            }
+            #cont_pfec {
+                div {
+                    h2 {
+                        font-size: 90%;
+                    }
+                    h3 {
+                        font-size: 80%;
+                    }
+                    h4 {
+                        font-size: 70%;
+                    }
+                }
+            }
+        }
+    }
     #cont {
         #in {
             background-position: 115% 90%;
@@ -478,8 +706,6 @@ body {
             }
         }
         #tec {
-            h1 {
-            }
             .tec_cont {
                 .tec_cont_cont {
                     div {
@@ -505,6 +731,9 @@ body {
                         height: 100%;
                         margin: 2%;
                         a {
+                            font-size: 140%;
+                        }
+                        button {
                             font-size: 140%;
                         }
                     }

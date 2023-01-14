@@ -14,7 +14,7 @@ html {
 	--color-white: #ffffff;
 	--color-black: #191919;
 	--color-bg: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-	--color-a: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+	--color-a: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
 	box-sizing: border-box;
 }
 .c-cursor {
@@ -27,7 +27,7 @@ html {
 	transform: translate(var(--cursor-x, -100px), var(--cursor-y, -100px)) translateZ(0);
 	pointer-events: none;
 	transition: none;
-	z-index: 11000;
+	z-index: 15000;
 	will-change: transform;
 	.is-debug &{
 		transition: all 0.2s ease-in-out;
