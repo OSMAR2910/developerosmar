@@ -374,7 +374,7 @@ header ul nav li:hover a {
     width: 20%;
   }
   header ul a img {
-    width: 85%;
+    width: 80%;
   }
   header ul nav {
     width: 100%;
@@ -574,13 +574,13 @@ html body #cont #pro #pro_cont div img {
 html body #cont #pro #pro_cont div b {
   font-family: "Rubik Wet Paint", cursive;
   font-size: 150%;
-  margin-top: 10%;
+  margin-top: 5%;
   color: #ffffff;
   display: flex;
   justify-content: center;
 }
 html body #cont #pro #pro_cont div a {
-  margin-top: 5%;
+  margin-top: 4%;
   font-family: "Rubik Spray Paint", cursive;
   display: flex;
   justify-content: center;
@@ -590,6 +590,16 @@ html body #cont #pro #pro_cont div a {
 }
 html body #cont #pro #pro_cont div a .icon {
   margin-right: 2%;
+}
+html body #cont #pro #pro_cont div footer {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+html body #cont #pro #pro_cont div footer .icon {
+  margin: 0 2%;
 }
 html body #cont #pro #pro_cont div a:hover {
   transform: scale(1.1);
@@ -794,7 +804,7 @@ html body #cont #con #con_cont ul li button:hover {
     justify-content: center;
   }
   html body #cont #pro #pro_cont {
-    height: 65%;
+    height: 75%;
     grid-template-columns: repeat(2, 1fr);
     margin: 5%;
   }
@@ -802,10 +812,13 @@ html body #cont #con #con_cont ul li button:hover {
     grid-column: 1/3;
   }
   html body #cont #pro #pro_cont div b {
-    font-size: 90%;
+    font-size: 115%;
   }
   html body #cont #pro #pro_cont div a {
-    font-size: 70%;
+    font-size: 85%;
+  }
+  html body #cont #pro #pro_cont div footer {
+    margin-top: 5%;
   }
   html body #cont #len {
     background-size: 50%;
@@ -957,6 +970,9 @@ html body #cont #con #con_cont ul li button:hover {
   html body #cont #pro #pro_cont h1 {
     grid-column: 1/3;
   }
+  html body #cont #pro #pro_cont div {
+    height: 85%;
+  }
   html body #cont #pro #pro_cont div b {
     font-family: "Rubik Wet Paint", cursive;
     font-size: 80%;
@@ -971,6 +987,9 @@ html body #cont #con #con_cont ul li button:hover {
   }
   html body #cont #pro #pro_cont div a .icon {
     margin-right: 3%;
+  }
+  html body #cont #pro #pro_cont div footer {
+    font-size: 80%;
   }
   html body #cont #len {
     display: flex;
@@ -1042,11 +1061,23 @@ html body #cont #con #con_cont ul li button:hover {
   html body #cont #in {
     background-position: 115% 90%;
   }
-  html body #cont #pro div b {
-    font-size: 110%;
+  html body #cont #pro #pro_cont {
+    height: 85%;
   }
-  html body #cont #pro div a {
-    font-size: 80%;
+  html body #cont #pro #pro_cont div {
+    height: 85%;
+  }
+  html body #cont #pro #pro_cont div b {
+    font-size: 90%;
+    margin-top: 5%;
+  }
+  html body #cont #pro #pro_cont div a {
+    font-size: 65%;
+    margin-top: 2%;
+  }
+  html body #cont #pro #pro_cont div footer {
+    font-size: 75%;
+    margin-top: 2%;
   }
   html body #cont #len #len_cont #len_cont_cont div img {
     width: 55%;
