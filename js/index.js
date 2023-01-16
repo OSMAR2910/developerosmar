@@ -113,12 +113,4 @@ if (!isTouch){
 
 	addEventListeners();
 	document.body.classList.add(hasCustomCursorClass);
-
-	// DEBUG
-	var debugButton = document.querySelector('.js-debug-button');
-	debugButton.onclick = function() {
-		debugButton.classList.toggle('is-active');
-		document.body.classList.toggle('is-debug');
-	}
-
 }
