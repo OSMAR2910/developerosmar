@@ -178,10 +178,12 @@ body {
         }
         #pro {
             #pro_cont {
+                height: 95%;
                 margin: 5%;
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
                 h1 {
+                    margin-top: -3%;
                     font-family: 'Nosifer', cursive;
                     color: $h1;
                     display: flex;
@@ -190,6 +192,7 @@ body {
                     grid-column: 1/4;
                 }
                 div {
+                    height: 75%;
                     background-color: $Secundario;
                     margin: 5%;
                     padding: 5%;
