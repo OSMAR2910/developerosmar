@@ -55,7 +55,7 @@ particlesJS(
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 5,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -100,7 +100,7 @@ particlesJS(
         "duration": 0.4
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 5
       },
       "remove": {
         "particles_nb": 2
