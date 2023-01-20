@@ -3,6 +3,10 @@
 @import "animaciones";
 @import "cursor";
 @import "nav";
+$color-black: #161616;
+$color-white: #fff;
+$size: 170px;
+
 html {
     scroll-behavior: smooth;
 body {
@@ -171,6 +175,7 @@ body {
         }
         #in {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-image: url("../img/woman/img6.png");
@@ -181,6 +186,12 @@ body {
                 font-family: 'Nosifer', cursive;
                 color: $h1;
                 z-index: 2;
+                background-color: $Transparente;
+                transition: all 0.5s;
+            }
+            h1:hover {
+                background-color: #f5e3fd57;
+                box-shadow: 0px 0px 175px 25px rgba(245,227,253,1);
             }
         }
         #pro {
@@ -263,7 +274,12 @@ body {
                 color: $h1;
                 display: flex;
                 grid-column: 1/4;
+                transition: all 0.5s;
                 z-index: 2;
+            }
+            h1:hover {
+                background-color: #f5e3fd57;
+                box-shadow: 0px 0px 175px 25px rgba(245,227,253,1);
             }
             #len_cont {
                 width: 97%;
@@ -340,7 +356,12 @@ body {
                 color: $h1;
                 display: flex;
                 grid-column: 1/4;
+                transition: all 0.5s;
                 z-index: 2;
+            }
+            h1:hover {
+                background-color: #f5e3fd57;
+                box-shadow: 0px 0px 175px 25px rgba(245,227,253,1);
             }
             .tec_cont {
                 width: 97%;
@@ -403,7 +424,7 @@ body {
                 }
             }
         }
-    #con {
+        #con {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -417,7 +438,12 @@ body {
                 font-family: 'Nosifer', cursive;
                 color: $h1;
                 display: flex;
+                transition: all 0.5s;
                 z-index: 2;
+            }
+            h1:hover {
+                background-color: #f5e3fd57;
+                box-shadow: 0px 0px 175px 25px rgba(245,227,253,1);
             }
             #con_cont {
                 width: 100%;
@@ -437,44 +463,58 @@ body {
                         justify-content: center;
                         list-style: none;
                         z-index: 2;
-                        a {
-                            align-items: center;
-                            background-color: $Secundario;
-                            font-family: 'Rubik Wet Paint', cursive;
-                            display: flex;
-                            padding: 1rem;
-                            border-radius: 2rem;
-                            font-size: 200%;
-                            text-decoration: none;
-                            color: $Blanco;
-                            transition: all 0.5s;
-                            .icon {
-                                font-size: 140%;
-                                margin-right: 4%;
-                            }
-                        }
+                        a, 
                         button {
                             align-items: center;
-                            background-color: $Secundario;
                             font-family: 'Rubik Wet Paint', cursive;
                             display: flex;
-                            padding: 1rem;
-                            border-radius: 2rem;
                             font-size: 200%;
+                            border: 0;
                             text-decoration: none;
                             color: $Blanco;
                             transition: all 0.5s;
-                            border: 0;
+	                        position:relative;
+	                        padding:2rem 3rem;
+	                        background-color:$Morado2;
+	                        border-top-right-radius:1rem;
+	                        border-bottom-left-radius:1rem;
+	                        transition:all 1s;
+	                        &:after,&:before{
+	                        	content:" ";
+	                        	width:10px;
+	                        	height:10px;
+	                        	position:absolute;
+	                        	border :0px solid #fff;
+	                        	transition:all 1s;
+	                        	}
+	                        &:after{
+	                        	top:-1px;
+	                        	left:-1px;
+	                        	border-top:5px solid $h1;
+	                        	border-left:5px solid $h1;
+	                        }
+	                        &:before{
+	                        	bottom:-1px;
+	                        	right:-1px;
+	                        	border-bottom:5px solid $h1;
+	                        	border-right:5px solid $h1;
+	                        }
+	                        &:hover{
+	                        	border-top-right-radius:0px;
+	                        border-bottom-left-radius:0px;
+	                        	// background:rgba(0,0,0,.5);
+	                        	// color:white;
+	                        	&:before,&:after{
+	                        		
+	                        		width:100%;
+	                        		height:100%;
+	                        		// border-color:white;
+	                        	}
+	                        }
                             .icon {
                                 font-size: 140%;
                                 margin-right: 4%;
                             }
-                        }
-                        a:hover {
-                            padding: 1.5rem;
-                        }
-                        button:hover {
-                            padding: 1.5rem;
                         }
                     }
                 }
@@ -608,11 +648,14 @@ body {
                     li {
                         height: 100%;
                         margin: 2%;
-                        a {
-                            font-size: 270%;
-                        }
+                        a, 
                         button {
-                            font-size: 270%;
+                            font-size: 200%;
+	                        padding:1rem 2rem;
+                            .icon {
+                                font-size: 140%;
+                                margin-right: 4%;
+                            }
                         }
                     }
                 }
