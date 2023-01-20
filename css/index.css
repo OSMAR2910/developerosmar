@@ -827,7 +827,7 @@ html body #cont #con #con_cont ul li button {
   color: #ffffff;
   transition: all 0.5s;
   position: relative;
-  padding: 2rem 3rem;
+  padding: 3vh 1vw;
   background-color: #300047;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
