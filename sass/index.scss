@@ -321,13 +321,10 @@ body {
                             margin: 0 2%;
                         }
                     }
-                    a:hover {
-                        transform: scale(1.1);
+                    img:hover {
+                        filter: blur(3px);
                     }
                 }
-                    img:hover {
-                        transform: scale(1.1);
-                    }
             }
         }
         #len {
@@ -684,6 +681,7 @@ body {
             background-position: 100% 95%;
             #btn {
                 margin-left: 90%;
+                z-index: 101;
             }
         }
         #in.fullscreen {
@@ -824,6 +822,7 @@ body {
 @media screen and (max-width: 500px) {
 html {
 body {
+    overflow: scroll;
     #modal {
         width: 35rem;
         height: 35rem;
@@ -914,28 +913,15 @@ body {
             background-size: 85%;
             background-position: 190% 90%;
             #btn {
-                margin-left: 80%;
-                margin-top: -180%;
-                transform: rotate(90deg);
-            }
-        }
-        #in.fullscreen {
-            width: 100vw;
-            background-image: url("../img/woman/img7.png");
-            background-size: 85%;
-            background-position: 190% 90%;
-            #btn {
-                margin-left: 80%;
-                margin-top: -160%;
-                transform: rotate(270deg);
+                opacity: 0;
+                z-index: -1000;
             }
         }
         #pro {
             background-size: 60%;
             #btn2 {
-                margin: 190% 0 0 -3%;
-                transform: rotate(270deg);
-                animation: none;
+                opacity: 0;
+                z-index: -1000;
             }
             #pro_cont {
                 grid-template-columns: repeat(2,1fr);
@@ -972,9 +958,8 @@ body {
             background-size: 50%;
             background-position: 15% 15%;
             #btn3 {
-                margin: 190% 0 0 50%;
-                transform: rotate(270deg);
-                animation: none;
+                opacity: 0;
+                z-index: -1000;
             }
             h1 {
                 grid-column: 1/4;
@@ -1005,9 +990,8 @@ body {
             background-repeat: no-repeat;
             background-position: 70% 25%;
             #btn4 {
-                margin: 190% 0 0 -3%;
-                transform: rotate(270deg);
-                animation: none;
+                opacity: 0;
+                z-index: -1000;
             }
             .tec_cont {
                 width: 100%;
@@ -1033,9 +1017,8 @@ body {
         }
         #con {
             #btn5 {
-                margin: 190% 0 0 -73%;
-                transform: rotate(270deg);
-                animation: none;
+                opacity: 0;
+                z-index: -1000;
             }
         }
     }
@@ -1105,19 +1088,8 @@ body {
                 margin-top: -150%;
             }
         }
-        #in.fullscreen {
-            background-size: 75%;
-            background-position: 130% 90%;
-            #btn {
-                margin-top: -130%;
-                transform: rotate(270deg);
-            }
-        }
         #pro {
             background-size: 70%;
-            #btn2 {
-                margin: 160% 0 0 -3%;
-            }
             #pro_cont {
                 height: 85%;
                 h1 {
@@ -1143,9 +1115,6 @@ body {
             }
         }
         #len {
-            #btn3 {
-                margin: 130% 0 0 50%;
-            }
             #len_cont {
                 #len_cont_cont {
                     div {
@@ -1163,9 +1132,6 @@ body {
             }
         }
         #tec {
-            #btn4 {
-                margin: 165% 0 0 -3%;
-            }
             .tec_cont {
                 .tec_cont_cont {
                     div {
@@ -1183,9 +1149,6 @@ body {
             }
         }
         #con {
-            #btn5 {
-                margin: 150% 0 0 -73%;
-            }
             h1 {
                 margin-top: -45%;
             }
