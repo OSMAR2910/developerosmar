@@ -428,6 +428,7 @@ html body #modal {
   border-radius: 1rem;
   color: #ffffff;
   overflow: hidden;
+  cursor: pointer;
 }
 html body #modal #modal_cont {
   display: flex;
@@ -572,10 +573,10 @@ html body #modal::backdrop {
   background-color: rgba(0, 0, 0, 0.805);
 }
 html body #cont #particles-js {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
 }
 html body #cont section {
   width: 70vw;
@@ -1220,7 +1221,7 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
 }
 @media screen and (max-width: 500px) {
   html body {
-    overflow: scroll;
+    overflow: hidden;
   }
   html body #modal {
     width: 35rem;
