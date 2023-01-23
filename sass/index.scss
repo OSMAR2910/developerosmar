@@ -384,7 +384,7 @@ body {
                 #len_cont_cont {
                     width: 100%;
                     display: grid;
-                    grid-template-columns: repeat(5,1fr);
+                    grid-template-columns: repeat(6,1fr);
                     div {
                         display: flex;
                         flex-direction: column;
@@ -392,7 +392,7 @@ body {
                         align-items: center;
                         border-bottom: 5px solid $Blanco;
                         transition: all 0.3s;
-                        margin: 5%;
+                        margin: 4%;
                         padding: 10%;
                         z-index: 2;
                         .tooltip-box {
@@ -823,7 +823,7 @@ body {
 @media screen and (max-width: 500px) {
 html {
 body {
-    overflow: hidden;
+    overflow: scroll;
     #modal {
         width: 35rem;
         height: 35rem;

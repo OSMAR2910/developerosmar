@@ -802,7 +802,7 @@ html body #cont #len #len_cont {
 html body #cont #len #len_cont #len_cont_cont {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 html body #cont #len #len_cont #len_cont_cont div {
   display: flex;
@@ -811,7 +811,7 @@ html body #cont #len #len_cont #len_cont_cont div {
   align-items: center;
   border-bottom: 5px solid #ffffff;
   transition: all 0.3s;
-  margin: 5%;
+  margin: 4%;
   padding: 10%;
   z-index: 2;
 }
@@ -1221,7 +1221,7 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
 }
 @media screen and (max-width: 500px) {
   html body {
-    overflow: hidden;
+    overflow: scroll;
   }
   html body #modal {
     width: 35rem;
