@@ -823,7 +823,7 @@ body {
 @media screen and (max-width: 500px) {
 html {
 body {
-    overflow: scroll;
+    overflow-y: scroll;
     #modal {
         width: 35rem;
         height: 35rem;
@@ -912,8 +912,10 @@ body {
         #in {
             background-image: url("../img/woman/img7.png");
             background-size: 85%;
-            background-position: 190% 90%;
+            background-position: 100% 90%;
             #btn {
+                animation: none;
+                width: 0;
                 opacity: 0;
                 z-index: -1000;
             }
@@ -921,6 +923,8 @@ body {
         #pro {
             background-size: 60%;
             #btn2 {
+                animation: none;
+                width: 0;
                 opacity: 0;
                 z-index: -1000;
             }
@@ -959,6 +963,8 @@ body {
             background-size: 50%;
             background-position: 15% 15%;
             #btn3 {
+                animation: none;
+                width: 0;
                 opacity: 0;
                 z-index: -1000;
             }
@@ -991,6 +997,8 @@ body {
             background-repeat: no-repeat;
             background-position: 70% 25%;
             #btn4 {
+                animation: none;
+                width: 0;
                 opacity: 0;
                 z-index: -1000;
             }
@@ -1018,6 +1026,8 @@ body {
         }
         #con {
             #btn5 {
+                animation: none;
+                width: 0;
                 opacity: 0;
                 z-index: -1000;
             }

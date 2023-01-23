@@ -1221,7 +1221,7 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
 }
 @media screen and (max-width: 500px) {
   html body {
-    overflow: scroll;
+    overflow-y: scroll;
   }
   html body #modal {
     width: 35rem;
@@ -1304,9 +1304,12 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
   html body #cont #in {
     background-image: url("../img/woman/img7.png");
     background-size: 85%;
-    background-position: 190% 90%;
+    background-position: 100% 90%;
   }
   html body #cont #in #btn {
+    -webkit-animation: none;
+            animation: none;
+    width: 0;
     opacity: 0;
     z-index: -1000;
   }
@@ -1314,6 +1317,9 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     background-size: 60%;
   }
   html body #cont #pro #btn2 {
+    -webkit-animation: none;
+            animation: none;
+    width: 0;
     opacity: 0;
     z-index: -1000;
   }
@@ -1352,6 +1358,9 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     background-position: 15% 15%;
   }
   html body #cont #len #btn3 {
+    -webkit-animation: none;
+            animation: none;
+    width: 0;
     opacity: 0;
     z-index: -1000;
   }
@@ -1382,6 +1391,9 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     background-position: 70% 25%;
   }
   html body #cont #tec #btn4 {
+    -webkit-animation: none;
+            animation: none;
+    width: 0;
     opacity: 0;
     z-index: -1000;
   }
@@ -1405,6 +1417,9 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     opacity: 100%;
   }
   html body #cont #con #btn5 {
+    -webkit-animation: none;
+            animation: none;
+    width: 0;
     opacity: 0;
     z-index: -1000;
   }
