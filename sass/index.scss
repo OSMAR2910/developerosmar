@@ -11,6 +11,17 @@ html {
 body {
     overflow: hidden;
     background-image: $Primario;
+    //bosstrap
+    .alert {
+        background-image: $Primario;
+        border-color: $Blanco;
+        color: $Blanco;
+        position: fixed;
+        z-index: 20000;
+    }
+    .navbar {
+        height: 100%;
+    }
     //modals
     #modal {
         width: 30rem;
@@ -199,7 +210,7 @@ body {
                 background-color: #f5e3fd57;
                 box-shadow: 0px 0px 175px 25px rgba(245,227,253,1);
             }
-            #btn {
+            #btn1 {
                 width: 3.5rem;
                 height: 3.5rem;
                 display: flex;
@@ -217,10 +228,10 @@ body {
                 animation-delay: 5s;
                 z-index: 2;
             }
-            #btn:hover {
+            #btn1:hover {
                 background-color: $Morado;
             }
-            #btn:active {
+            #btn1:active {
                 transition: all 0s;
                 background-color: $Blanco;
             }
@@ -229,8 +240,8 @@ body {
             width: 70vw;
             background-size: 30%;
             background-position: 105% 50%;
-            #btn {
-                margin-left: 65%;
+            #btn1 {
+                margin-left: 63%;
                 animation: none;
                 transform: rotate(180deg);
             }
@@ -680,7 +691,7 @@ body {
         #in {
             background-size: 60%;
             background-position: 100% 95%;
-            #btn {
+            #btn1 {
                 margin-left: 90%;
                 z-index: 101;
             }
@@ -689,7 +700,7 @@ body {
             background-size: 30%;
             background-size: 70%;
             background-position: 100% 95%;
-            #btn {
+            #btn1 {
                 margin-left: 60%;
                 animation: none;
             }
@@ -912,8 +923,8 @@ body {
         #in {
             background-image: url("../img/woman/img7.png");
             background-size: 85%;
-            background-position: 100% 90%;
-            #btn {
+            background-position: 200% 90%;
+            #btn1 {
                 animation: none;
                 width: 0;
                 opacity: 0;
@@ -1095,7 +1106,7 @@ body {
         #in {
             background-size: 75%;
             background-position: 130% 90%;
-            #btn {
+            #btn1 {
                 margin-top: -150%;
             }
         }

@@ -140,7 +140,7 @@ var box = document.getElementById('in'),
 			contador=0;
 		}
 	}
-btn.addEventListener('click', cambio, true);
+btn1.addEventListener('click', cambio, true);
 btn2.addEventListener('click', cambio, true);
 btn3.addEventListener('click', cambio, true);
 btn4.addEventListener('click', cambio, true);
