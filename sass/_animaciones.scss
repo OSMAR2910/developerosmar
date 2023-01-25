@@ -1,0 +1,61 @@
+@import "variables";
+@keyframes preloader {
+  100% { transform: scale(2); }
+}
+@keyframes btn_fullscreen {
+    0% {
+        transform: rotate(none) scale(1);
+    }
+    50% {
+        transform: rotate(50deg) scale(1.1);
+        border: 1.4rem outset $Morado;
+        background-color: $Blanco;
+    }
+    100% {
+        transform: rotate(none) scale(1);
+    }
+}
+@keyframes logo {
+    0% {
+        transform: translate(0, -100vh);
+    }
+    50% {
+        transform: translate(0, 3vh);
+    }
+    100% {
+        transform:translate(0, 0vh);
+    }
+}
+@keyframes logo_palpitar {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1); 
+    }
+}
+@keyframes lef {
+    0% {
+        transform: translateX(-100vw);
+    }
+    50% {
+        transform: translateX(2vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes rif {
+    0% {
+        transform: translateX(100vw);
+    }
+    50% {
+        transform: translateX(-2vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
