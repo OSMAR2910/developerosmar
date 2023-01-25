@@ -745,9 +745,9 @@ html body #cont #pro #pro_cont h1 {
   z-index: 2;
 }
 html body #cont #pro #pro_cont div {
-  height: 75%;
+  height: 95%;
   background-color: #300047;
-  margin: 5%;
+  margin: -3% 2%;
   padding: 5%;
   overflow: hidden;
   z-index: 2;
@@ -1376,7 +1376,8 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     margin: 0;
   }
   html body #cont #pro #pro_cont div {
-    height: 85%;
+    height: 13.5rem;
+    margin-top: 1.5rem;
   }
   html body #cont #pro #pro_cont div b {
     font-family: "Rubik Wet Paint", cursive;
@@ -1416,7 +1417,7 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     grid-column: 1/4;
   }
   html body #cont #len #len_cont {
-    height: 75%;
+    height: 40rem;
   }
   html body #cont #len #len_cont #len_cont_cont {
     height: 100%;
@@ -1458,6 +1459,7 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     grid-column: 1/2;
   }
   html body #cont #tec .tec_cont .tec_cont_cont div {
+    height: 13rem;
     margin: 2%;
   }
   html body #cont #tec .tec_cont .tec_cont_cont div:hover .tooltip-box {
@@ -1524,7 +1526,7 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     background-size: 70%;
   }
   html body #cont #pro #pro_cont {
-    height: 85%;
+    height: 40rem;
   }
   html body #cont #pro #pro_cont h1 {
     margin-top: 3vh;
@@ -1546,12 +1548,18 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     font-size: 75%;
     margin-top: 2%;
   }
+  html body #cont #len #len_cont {
+    height: 30rem;
+  }
   html body #cont #len #len_cont #len_cont_cont div img {
     width: 55%;
   }
   html body #cont #len #len_cont #len_cont_cont div:hover .tooltip-box {
     margin-top: -15%;
     opacity: 100%;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont div {
+    height: 9rem;
   }
   html body #cont #tec .tec_cont .tec_cont_cont div img {
     width: 70%;

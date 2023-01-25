@@ -293,9 +293,9 @@ body {
                     z-index: 2;
                 }
                 div {
-                    height: 75%;
+                    height: 95%;
                     background-color: $Secundario;
-                    margin: 5%;
+                    margin: -3% 2%;
                     padding: 5%;
                     overflow: hidden;
                     z-index: 2;
@@ -943,7 +943,8 @@ body {
                 grid-template-columns: repeat(2,1fr);
                 margin: 0;
                 div {
-                    height: 85%;
+                    height: 13.5rem;
+                    margin-top: 1.5rem;
                     b {
                         font-family: 'Rubik Wet Paint', cursive;
                         font-size: 80%;
@@ -983,7 +984,7 @@ body {
                 grid-column: 1/4;
             }
             #len_cont {
-                height: 75%;
+                height: 40rem;
                 #len_cont_cont {
                     height: 100%;
                     grid-template-columns: repeat(2,1fr);
@@ -1024,6 +1025,7 @@ body {
                         grid-column: 1/2;
                     }
                     div {
+                        height: 13rem;
                         margin: 2%;
                     }
                     div:hover {
@@ -1113,7 +1115,7 @@ body {
         #pro {
             background-size: 70%;
             #pro_cont {
-                height: 85%;
+                height: 40rem;
                 h1 {
                     margin-top: 3vh;
                 }
@@ -1138,6 +1140,7 @@ body {
         }
         #len {
             #len_cont {
+                height: 30rem;
                 #len_cont_cont {
                     div {
                         img {
@@ -1157,6 +1160,7 @@ body {
             .tec_cont {
                 .tec_cont_cont {
                     div {
+                        height: 9rem;
                         img {
                             width: 70%;
                         }
