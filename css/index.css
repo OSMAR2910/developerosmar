@@ -1394,11 +1394,11 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
   }
   html body #cont #pro #pro_cont {
     grid-template-columns: repeat(2, 1fr);
-    margin: 0;
+    margin: 1rem 0 0 0;
   }
   html body #cont #pro #pro_cont div {
-    height: 13rem;
-    margin-top: 1.5rem;
+    height: 12.5rem;
+    margin-top: 1rem;
   }
   html body #cont #pro #pro_cont div b {
     font-family: "Rubik Wet Paint", cursive;
@@ -1439,7 +1439,7 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     grid-column: 1/4;
   }
   html body #cont #len #len_cont {
-    height: 40rem;
+    height: 35rem;
   }
   html body #cont #len #len_cont #len_cont_cont {
     height: 100%;
@@ -1484,8 +1484,8 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     grid-column: 1/2;
   }
   html body #cont #tec .tec_cont .tec_cont_cont div {
-    height: 13rem;
-    margin: 2%;
+    height: 10.8rem;
+    margin: 3%;
   }
   html body #cont #tec .tec_cont .tec_cont_cont div:hover .tooltip-box {
     margin-top: -13%;

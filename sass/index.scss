@@ -962,10 +962,10 @@ body {
             }
             #pro_cont {
                 grid-template-columns: repeat(2,1fr);
-                margin: 0;
+                margin: 1rem 0 0 0;
                 div {
-                    height: 13rem;
-                    margin-top: 1.5rem;
+                    height: 12.5rem;
+                    margin-top: 1rem;
                     b {
                         font-family: 'Rubik Wet Paint', cursive;
                         font-size: 80%;
@@ -1006,7 +1006,7 @@ body {
                 grid-column: 1/4;
             }
             #len_cont {
-                height: 40rem;
+                height: 35rem;
                 #len_cont_cont {
                     height: 100%;
                     grid-template-columns: repeat(2,1fr);
@@ -1050,8 +1050,8 @@ body {
                         grid-column: 1/2;
                     }
                     div {
-                        height: 13rem;
-                        margin: 2%;
+                        height: 10.8rem;
+                        margin: 3%;
                     }
                     div:hover {
                         .tooltip-box {
