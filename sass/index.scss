@@ -964,7 +964,7 @@ body {
                 grid-template-columns: repeat(2,1fr);
                 margin: 1rem 0 0 0;
                 div {
-                    height: 12.5rem;
+                    height: 11.5rem;
                     margin-top: 1rem;
                     b {
                         font-family: 'Rubik Wet Paint', cursive;
@@ -976,13 +976,14 @@ body {
                     }
                     a {
                         font-size: 60%;
-                        margin-top: 5%;
+                        margin-top: 0.3rem;
                         .icon {
                             margin-right: 3%;
                         }
                     }
                     footer {
                         font-size: 80%;
+                        margin-top: 0.3rem;
                     }
                 }
             }
@@ -1012,6 +1013,9 @@ body {
                     grid-template-columns: repeat(2,1fr);
                     div {
                         margin: 1%;
+                        b {
+                            margin-top: 1rem;
+                        }
                         img {
                             width: 70%;
                         }
@@ -1050,8 +1054,12 @@ body {
                         grid-column: 1/2;
                     }
                     div {
-                        height: 10.8rem;
+                        height: 10rem;
                         margin: 3%;
+                        font-size: 0.8rem;
+                        b {
+                            margin-top: 0.5rem;
+                        }
                     }
                     div:hover {
                         .tooltip-box {
@@ -1084,7 +1092,7 @@ body {
                         .button {
                             width: 15rem;
                             .button-label {
-                                padding: 1.7rem 15px;
+                                padding: 1.4rem 13px;
                             }
                         }
                     }

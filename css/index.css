@@ -1397,7 +1397,7 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     margin: 1rem 0 0 0;
   }
   html body #cont #pro #pro_cont div {
-    height: 12.5rem;
+    height: 11.5rem;
     margin-top: 1rem;
   }
   html body #cont #pro #pro_cont div b {
@@ -1410,13 +1410,14 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
   }
   html body #cont #pro #pro_cont div a {
     font-size: 60%;
-    margin-top: 5%;
+    margin-top: 0.3rem;
   }
   html body #cont #pro #pro_cont div a .icon {
     margin-right: 3%;
   }
   html body #cont #pro #pro_cont div footer {
     font-size: 80%;
+    margin-top: 0.3rem;
   }
   html body #cont #len {
     display: flex;
@@ -1447,6 +1448,9 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
   }
   html body #cont #len #len_cont #len_cont_cont div {
     margin: 1%;
+  }
+  html body #cont #len #len_cont #len_cont_cont div b {
+    margin-top: 1rem;
   }
   html body #cont #len #len_cont #len_cont_cont div img {
     width: 70%;
@@ -1484,8 +1488,12 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     grid-column: 1/2;
   }
   html body #cont #tec .tec_cont .tec_cont_cont div {
-    height: 10.8rem;
+    height: 10rem;
     margin: 3%;
+    font-size: 0.8rem;
+  }
+  html body #cont #tec .tec_cont .tec_cont_cont div b {
+    margin-top: 0.5rem;
   }
   html body #cont #tec .tec_cont .tec_cont_cont div:hover .tooltip-box {
     margin-top: -13%;
@@ -1517,7 +1525,7 @@ html body #cont #con #con_cont ul li .button .button-label .icon {
     width: 15rem;
   }
   html body #cont #con #con_cont ul li .button .button-label {
-    padding: 1.7rem 15px;
+    padding: 1.4rem 13px;
   }
 }
 @media screen and (max-height: 650px) {
