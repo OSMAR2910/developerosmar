@@ -306,7 +306,6 @@ body {
                 margin: 5%;
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
-                animation: len;
                 h1 {
                     font-size: 220%;
                     margin-top: -3%;
@@ -418,7 +417,6 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                animation: len 1s 1;
                 #len_cont_cont {
                     width: 100%;
                     display: grid;
@@ -1045,7 +1043,8 @@ body {
                 grid-template-columns: repeat(2,1fr);
                 margin: 1rem 0 0 0;
                 div {
-                    height: 11.5rem;
+                    height: 100%;
+                    max-height: 12.5rem;
                     margin-top: 1rem;
                     b {
                         font-family: 'Rubik Wet Paint', cursive;
@@ -1088,7 +1087,8 @@ body {
                 grid-column: 1/4;
             }
             #len_cont {
-                height: 35rem;
+                height: 55%;
+                max-height: 35rem;
                 #len_cont_cont {
                     height: 100%;
                     grid-template-columns: repeat(2,1fr);
@@ -1136,7 +1136,8 @@ body {
                         grid-column: 1/2;
                     }
                     div {
-                        height: 10rem;
+                        height: 90%;
+                        max-height: 15rem;
                         margin: 3%;
                         font-size: 0.8rem;
                         b {
