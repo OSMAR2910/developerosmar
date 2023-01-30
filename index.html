@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MMCWQGJSW6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-MMCWQGJSW6');
+  </script>
+  <link rel="shortcut icon" href="img/icons/Logo1.webp" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <meta name="theme-color" content="#300047" />
+  <meta name="msapplication-navbutton-color" content="#300047" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#300047" />
+  <title>Developer</title>
+</head>
+<body>
+  <!--Bostrap-->
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Hola usuario</strong> Te recomendamos interactuar con este portafolio en PC, Tablet o Laptop para disfrutar de la experiencia completa.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <!--Posision flex-->
+  <div id="loader">
+    <span class="loader__element"></span>
+    <span class="loader__element"></span>
+    <span class="loader__element"></span>
+  </div>
+  <div class="c-cursor | js-cursor">
+    <div class="c-cursor__inner"></div>
+  </div>
+  <!--
+  <div class="btn-group">
+    <button type="button" class="btn btn-user btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+      <img src="img/icons/User_Icon.png" alt="user">
+    </button>
+    <ul class="dropdown-menu dropdown-menu-lg-end">
+      <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Registrarte</button></li>
+      <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Únete</button></li>
+    </ul>
+  </div>-->
+  <!--Modal-->
+  <dialog id="modal">
+    <div id="modal_cont">
+      <button id="button_cv_cerrar">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <a target="_blank" href="img/CV.pdf"><ion-icon class="icon" name="arrow-down-circle-outline"></ion-icon></a>
+      <div id="cont_name">
+        <h1>DAMIAN OSMAR SIFUENTES FLORES</h1>
+        <div>
+          <ul>
+            <li>
+              <ion-icon name="mail-outline"></ion-icon>
+              <b>tremendooz29@gmail.com</b>
+            </li>
+            <li>
+              <ion-icon name="calendar-outline"></ion-icon>
+              <b>29 de octubre del 2005</b>
+            </li>
+            <li>
+              <ion-icon name="location-outline"></ion-icon>
+              <b>Baja california, Tijuana</b>
+            </li>
+            <li>
+              <ion-icon name="car-outline"></ion-icon>
+              <b>BC202209089109</b>
+            </li>
+            <li>
+              <ion-icon name="transgender-outline"></ion-icon>
+              <b>Hombre</b>
+            </li>
+            <li>
+              <ion-icon name="people-outline"></ion-icon>
+              <b>Soltero</b>
+            </li>
+            <li>
+              <ion-icon name="globe-outline"></ion-icon>
+              <b>developerosmar.netlify.app</b>
+            </li>
+            <li>
+              <ion-icon name="code-slash-outline"></ion-icon>
+              <b>Nivel:Junior</b>
+            </li>
+            <li>
+              <ion-icon name="code-slash-outline"></ion-icon>
+              <b>Desarrollador web: Front-end</b>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="cont_cip">
+        <div>
+          <h2>Competencias</h2>
+          <h3>Desarrollo Web</h3>
+          <ul class="progreso">
+            <li class="progreso_cont" style="width: 30%">
+              <b>30%</b>
+            </li>
+          </ul>
+          <h2>Idiomas</h2>
+          <h3>Ingles</h3>
+          <ul class="progreso">
+            <li class="progreso_cont" style="width: 15%">
+              <b>15%</b>
+            </li>
+          </ul>
+          <h2>Pasatiempos e intereses</h2>
+          <ul>
+            <li>Robotica</li>
+            <li>Diseño grafico</li>
+            <li>Electronica</li>
+          </ul>
+        </div>
+      </div>
+      <div id="cont_pfec">
+        <div>
+          <h2>Perfil</h2>
+          <h4>
+            Soy un estudiante con conocimientos básicos en desarrollo web, mi
+            objetivo es seguir aprendiendo y mejorar como desarrollador
+          </h4>
+          <h2>Formacion</h2>
+          <h3>Preparatoria</h3>
+          <h4>Cobach, la mesa</h4>
+          <h2>Experiencia</h2>
+          <h3>Sistemas</h3>
+          <h4>Mamamia pizza, Tijuana</h4>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrarte</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="email" placeholder="email">
+        <input type="password" placeholder="password">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Únete</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="email" placeholder="email">
+        <input type="password" placeholder="password">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <header id="header">
+    <!--Escritorio, Tablets etc-->
+    <nav class="active1">
+      <a href="index.html">
+        <img src="img/icons/Logo.webp" alt="logo" />
+      </a>
+      <ul>
+        <li>
+          <a href="#in"> Inicio </a>
+        </li>
+        <li>
+          <a href="#pro"> Proyectos </a>
+        </li>
+        <li>
+          <a href="#len"> Lenguajes </a>
+        </li>
+        <li>
+          <a href="#tec"> Tecnologias </a>
+        </li>
+        <li>
+          <a href="#res"> Responsivo</a>
+        </li>
+        <li>
+          <a href="#con"> Contactarme </a>
+        </li>
+      </ul>
+    </nav>
+     <!--Moviles-->
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary active2" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/icons/Logo.webp" alt="icon"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#in">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pro">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#len">Lenguajes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tec">Tecnologias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#res">Responsivo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#con">Contactarme</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="cont">
+
+    <div id="particles-js"></div>
+    <section id="in">
+      <h1>Bienvenidos</h1>
+      <button id="btn1">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
+    </section>
+    <section id="pro">
+    <button id="btn2">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </button>
+      <div id="pro_cont">
+        <h1>Proyectos</h1>
+        <div>
+          <a target="_blank" href="https://nails-room.netlify.app/Web.html">
+            <img src="img/Proyectos/web 1.webp" alt="image" />
+          </a>
+          <b>Nails Room</b>
+          <a href="https://github.com/OSMAR2910/ELMF"><ion-icon class="icon" name="logo-github"></ion-icon>
+            Repositorio</a>
+          <footer>
+            <ion-icon class="icon" name="logo-sass"></ion-icon>
+            <ion-icon class="icon" name="logo-css3"></ion-icon>
+            <ion-icon class="icon" name="logo-html5"></ion-icon>
+            <ion-icon class="icon" name="logo-javascript"></ion-icon>
+          </footer>
+        </div>
+        <div>
+          <a target="_blank" href="https://dogits.netlify.app/Web.html">
+            <img src="img/Proyectos/web 2.webp" alt="image" />
+          </a>
+          <b>Dogit's</b>
+          <a href="https://github.com/OSMAR2910/Dogits-WEB"><ion-icon class="icon" name="logo-github"></ion-icon>
+            Repositorio</a>
+          <footer>
+            <ion-icon class="icon" name="logo-sass"></ion-icon>
+            <ion-icon class="icon" name="logo-css3"></ion-icon>
+            <ion-icon class="icon" name="logo-html5"></ion-icon>
+            <ion-icon class="icon" name="logo-javascript"></ion-icon>
+          </footer>
+        </div>
+        <div>
+          <a target="_blank" href="https://developerosmar.netlify.app/">
+            <img src="img/Proyectos/web 3.webp" alt="image" />
+          </a>
+          <b>Portafolio</b>
+          <a href="https://github.com/OSMAR2910/developerosmar"><ion-icon class="icon" name="logo-github"></ion-icon>
+            Repositorio</a>
+          <footer>
+            <ion-icon class="icon" name="logo-sass"></ion-icon>
+            <ion-icon class="icon" name="logo-css3"></ion-icon>
+            <ion-icon class="icon" name="logo-html5"></ion-icon>
+            <ion-icon class="icon" name="logo-javascript"></ion-icon>
+            <ion-icon name="logo-python"></ion-icon>
+          </footer>
+        </div>
+        <div>
+          <a target="_blank" href="https://soportemmm.netlify.app/">
+            <img src="img/Proyectos/web 4.webp" alt="image" />
+          </a>
+          <b>Mamamia pizza</b>
+          <a href="https://github.com/OSMAR2910/Soporte"><ion-icon class="icon" name="logo-github"></ion-icon>
+            Repositorio</a>
+          <footer>
+            <ion-icon class="icon" name="logo-sass"></ion-icon>
+            <ion-icon class="icon" name="logo-css3"></ion-icon>
+            <ion-icon class="icon" name="logo-html5"></ion-icon>
+            <ion-icon class="icon" name="logo-javascript"></ion-icon>
+          </footer>
+        </div>
+        <div>
+          <img src="img/Proyectos/web prox.webp" alt="image" />
+          <b>Proximamante</b>
+        </div>
+        <div>
+          <img src="img/Proyectos/web prox.webp" alt="image" />
+          <b>Proximamante</b>
+        </div>
+      </div>
+    </section>
+    <section id="len">
+      <button id="btn3">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
+      <h1>Lenguajes</h1>
+      <div id="len_cont">
+        <div id="len_cont_cont">
+          <div>
+            <span class="tooltip-box">HTML</span>
+            <img src="img/icons/html.webp" alt="icon"/>
+            <b>Junior</b>
+          </div>
+          <div>
+            <span class="tooltip-box">CSS</span>
+            <img src="img/icons/css.webp" alt="icon" />
+            <b>Junior</b>
+          </div>
+          <div>
+            <span class="tooltip-box">Java Script</span>
+            <img src="img/icons/js.webp" alt="icon" />
+            <b>Principiante</b>
+          </div>
+          <div>
+            <span class="tooltip-box">C++</span>
+            <img src="img/icons/C++.webp" alt="icon" />
+            <b>Principiante</b>
+          </div>
+          <div>
+            <span class="tooltip-box">GNU/Linux</span>
+            <img src="img/icons/linux.webp" alt="icon" />
+            <b>Junior</b>
+          </div>
+          <div>
+            <span class="tooltip-box">Python</span>
+            <img src="img/icons/Python.webp" alt="icon" />
+            <b>Prinsipiante</b>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tec">
+      <button id="btn4">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
+      <h1>Preprocesadores y Framework</h1>
+      <div id="tec_an1" class="tec_cont">
+        <div class="tec_cont_cont">
+          <div id="react">
+            <span class="tooltip-box">Bootstrap</span>
+            <img src="img/icons/Bootstrap.webp" alt="icon" />
+            <b>Prinsipiante</b>
+          </div>
+          <div id="sass">
+            <span class="tooltip-box">Sass</span>
+            <img src="img/icons/sass.webp" alt="icon" />
+            <b>Junior</b>
+          </div>
+        </div>
+      </div>
+      <h1>Sofware</h1>
+      <div id="tec_an2" class="tec_cont">
+        <div class="tec_cont_cont">
+          <div>
+            <span class="tooltip-box">Arduino</span>
+            <img src="img/icons/arduino.webp" alt="icon" />
+            <b>Principiante</b>
+          </div>
+          <div>
+            <span class="tooltip-box">Fillezilla</span>
+            <img src="img/icons/filezilla.webp" alt="icon" />
+            <b>Junior</b>
+          </div>
+          <div>
+            <span class="tooltip-box">Gimp</span>
+            <img src="img/icons/gimp.webp" alt="icon" />
+            <b>Junior</b>
+          </div>
+          <div>
+            <span class="tooltip-box">Github</span>
+            <img src="img/icons/github.webp" alt="icon" />
+            <b>Junior</b>
+          </div>
+          <div>
+            <span class="tooltip-box">Photoshop</span>
+            <img src="img/icons/photoshop.webp" alt="icon" />
+            <b>Junior</b>
+          </div>
+          <div>
+            <span class="tooltip-box">VSCode</span>
+            <img src="img/icons/vscode.webp" alt="icon" />
+            <b>Junior</b>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="res">
+      <button id="btn5">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
+    <div id="res_cont">
+      <h1>Responsivo</h1>
+      <div id="res_cont_cont">
+        <div id="img1">
+            <img src="img/Proyectos/Responsivo/iphone.webp" alt="img">
+        </div>
+        <div id="img2">
+          <img src="img/Proyectos/Responsivo/monitor.webp" alt="img">
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="con">
+      <button id="btn6">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
+      <h1>Contactarme</h1>
+      <div id="con_cont">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/osmarsin2910" class="button">
+              <span class="button-label"><ion-icon class="icon" name="logo-instagram"></ion-icon>Instagram</span>
+              <svg class="button-bg" width="100%" height="100%" viewBox="0 0 115 45" preserveAspectRatio="none">
+                  <path class="button-bg-path" stroke-width="4" d="M58,45 L 0,45 0,0 115,0 115,45 Z" vector-effect="non-scaling-stroke"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:tremendooz29@gmail.com" class="button">
+              <span class="button-label"><ion-icon class="icon" name="mail-outline"></ion-icon>Correo</span>
+              <svg class="button-bg" width="100%" height="100%" viewBox="0 0 115 45" preserveAspectRatio="none">
+                  <path class="button-bg-path" stroke-width="4" d="M58,45 L 0,45 0,0 115,0 115,45 Z" vector-effect="non-scaling-stroke"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/526631117568/?text=Estoy+interesado+en+tu+servicio+web" class="button">
+              <span class="button-label"><ion-icon class="icon" name="logo-whatsapp"></ion-icon>Whatsapp</span>
+              <svg class="button-bg" width="100%" height="100%" viewBox="0 0 115 45" preserveAspectRatio="none">
+                  <path class="button-bg-path" stroke-width="4" d="M58,45 L 0,45 0,0 115,0 115,45 Z" vector-effect="non-scaling-stroke"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+          <li>
+            <a href="https://github.com/OSMAR2910" class="button">
+              <span class="button-label"><ion-icon class="icon" name="logo-github"></ion-icon>Github</span>
+              <svg class="button-bg" width="100%" height="100%" viewBox="0 0 115 45" preserveAspectRatio="none">
+                  <path class="button-bg-path" stroke-width="4" d="M58,45 L 0,45 0,0 115,0 115,45 Z" vector-effect="non-scaling-stroke"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <button id="button_cv_abrir" class="button">
+                <span class="button-label"><ion-icon class="icon" name="document-text-outline"></ion-icon>CV</span>
+                <svg class="button-bg" width="100%" height="100%" viewBox="0 0 115 45" preserveAspectRatio="none">
+                    <path class="button-bg-path" stroke-width="4" d="M58,45 L 0,45 0,0 115,0 115,45 Z" vector-effect="non-scaling-stroke"></path>
+                </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+  <script src="js/index.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  <!--Bosstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!--ionicons-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--Firebase-->
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAto4nM_G9Xfqn_lOA39QgxYT0Cju2jCt4",
+    authDomain: "developerosmar-d209b.firebaseapp.com",
+    projectId: "developerosmar-d209b",
+    storageBucket: "developerosmar-d209b.appspot.com",
+    messagingSenderId: "35048080442",
+    appId: "1:35048080442:web:f9ad4e2863adf166c16103",
+    measurementId: "G-JPDKR6J064"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
