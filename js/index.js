@@ -1,8 +1,8 @@
 //Crarga
 window.onload = function() {
-	var contenedor = document.getElementById('loader');
-	contenedor.style.visibility = 'hidden';
-	contenedor.style.opacity = '0';
+	var loader = document.getElementById('loader');
+	loader.style.visibility = 'hidden';
+	loader.style.opacity = '0';
 }
 //Cursor
 function isTouchDevice() {
@@ -63,7 +63,7 @@ window.addEventListener('scroll', function() {
 let animacion = document.getElementById("pro_cont");
 let posicionObj1 = animacion.getBoundingClientRect().top;
 let tamañoDePantalla = window.innerHeight / 1;
-if(posicionObj1 < tamañoDePantalla) {
+if (posicionObj1 < tamañoDePantalla) {
 	animacion.style.animation = "iz 2s ease-out"
 }
 })
