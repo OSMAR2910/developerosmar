@@ -1,0 +1,302 @@
+body {
+        header {
+        width: 20vw;
+        height: 100vh;
+        background-color: $Secundario;
+        font-family: 'Rubik Spray Paint', cursive;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        opacity: 0;
+        z-index: -100;
+        #switch {
+            background-color: $Transparente;
+            width: 5rem;
+            height: 5rem;
+            margin-top: -200%;
+            margin-left: -80%;
+            font-size: 200%;
+            border: 0;
+            color: $Blanco;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+        #switch.active {
+            color: $Negro;
+        }
+        .active1 {
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 7.5rem;
+                img {
+                    width: 100%;
+                    animation: logo_palpitar 3.5s ease-in-out infinite, logo 1.5s 1;
+                    animation-delay: 2s;
+                }
+            }
+            ul {
+                margin: 0;
+                margin-top: 5%;
+                padding: 0;
+                height: 65%;
+                padding: 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    list-style: none;
+                    a {
+                        font-size: 115%;
+                        color: $Blanco;
+                        text-decoration: none;
+                        transition: all 0.2s;
+                    }
+                }
+                li:hover {
+                    a {
+                        font-size: 120%;
+                    }
+                }
+            }
+        }
+        .active2 {
+            opacity: 0;
+            width: 0;
+            height: 0;
+            font-size: 0;
+            .navbar-brand {
+                margin-top:0;
+                margin-left:0;
+                width: 0;
+                z-index: -100;
+                img {
+                    width: 0;
+                }
+            }
+        }
+    }
+    header.fullscreen {
+        opacity: 100%;
+        z-index: 100;
+    }
+    header.dark {
+        background-color: $SecundarioDark;
+        #switch {
+            color: $BlancoDark;
+        }
+        #switch.active {
+            color: $BlancoDark;
+        }
+        .active1 {
+            li {
+                a {
+                    color: $BlancoDark;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    body {
+        header {
+            background-color: rgba(0, 0, 0, 0);
+            width: 100vw;
+            height: 10vh;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            transition: all 0.5s;
+            opacity: 100%;
+            z-index: 100;
+            #switch {
+                margin-top: 0%;
+                margin-left: 0%;
+                z-index: 101;
+                font-size: 300%;
+            }
+            .active1 {
+                width: 0;
+                a {
+                    width: 0;
+                    img {
+                        width: 0;
+                    }
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    width: 0;
+                    display: flex;
+                    li {
+                        margin: 0;
+                        padding: 0;
+                        a {
+                            font-size: 0;
+                        }
+                    }
+                }
+            }
+            .active2 {
+                opacity: 100%;
+                width: 100%;
+                height: 100%;
+                font-size: 100%;
+                background-color: $Transparente !important;
+                .navbar-brand {
+                    margin-top: 0%;
+                    margin-left: 0%;
+                    width: 10%;
+                    z-index: 10;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .navbar-toggler {
+                    margin-top: -2%;
+                    background-color: $h1;
+                }
+                .collapse {
+                    margin: 0;
+                    background-color: $Transparente;
+                    transition: all 0.5s;
+                }
+                .collapse.abajo {
+                    border-radius: 0px 0px 2rem 2rem;
+                    padding: 10%;
+                    text-align: center;
+                    background-color: $Secundario;
+                    transition: all 0.5s;
+                }
+            }
+        }
+        header.abajo {
+            background-color: $Secundario;
+        }
+    }
+    body.dark {
+        header {
+            background-color: $Transparente;
+            .active2 {
+                .navbar-toggler {
+                    background-color: $h1Dark;
+                }
+                .collapse.abajo {
+                    background-color: $SecundarioDark;
+                }
+            }
+        }
+        header.abajo {
+            background-color: $SecundarioDark;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        header {
+            background-color: rgba(0, 0, 0, 0);
+            width: 100vw;
+            height: 8vh;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            transition: all 0.5s;
+            opacity: 100%;
+            z-index: 100;
+            #switch {
+                font-size: 220%;
+                margin-top: 0%;
+                margin-left: 0%;
+                z-index: 101;
+            }
+            .active1 {
+                width: 0;
+                a {
+                    width: 0;
+                    img {
+                        width: 0;
+                    }
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    width: 0;
+                    display: flex;
+                    li {
+                        margin: 0;
+                        padding: 0;
+                        a {
+                            font-size: 0;
+                        }
+                    }
+                }
+            }
+            .active2 {
+                opacity: 100%;
+                width: 100%;
+                height: 100%;
+                font-size: 100%;
+                background-color: $Transparente !important;
+                .navbar-brand {
+                    margin-top: -1%;
+                    margin-left: -1%;
+                    width: 15%;
+                    z-index: 10;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .navbar-toggler {
+                    margin-top: -2%;
+                    background-color: $h1;
+                }
+                .collapse {
+                    margin: 0;
+                    background-color: $Transparente;
+                    transition: all 0.5s;
+                }
+                .collapse.abajo {
+                    border-radius: 0px 0px 2rem 2rem;
+                    padding: 10%;
+                    text-align: center;
+                    background-color: $Secundario;
+                    transition: all 0.5s;
+                }
+            }
+        }
+        header.abajo {
+            background-color: $Secundario;
+        }
+    }
+    body.dark {
+        header {
+            background-color: $Transparente;
+            .active2 {
+                .navbar-toggler {
+                    background-color: $h1Dark;
+                }
+                .collapse.abajo {
+                    background-color: $SecundarioDark;
+                }
+            }
+        }
+        header.abajo {
+            background-color: $SecundarioDark;
+        }
+    }
+}
