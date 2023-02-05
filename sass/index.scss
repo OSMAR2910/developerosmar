@@ -1268,6 +1268,32 @@ body.dark {
                         h1 {
                             font-size: 180%;
                         }
+                #res_cont_cont {
+                    width: 20rem;
+                    height: 15rem;
+                    background-image: url("../img/icons/monitor.webp");
+                    #img1 {
+                        width: 0%;
+                        height: 0%;
+                        margin-left: 0%;
+                        border-radius: 0.5rem;
+                        overflow-y: scroll;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    #img2 {
+                        width: 83%;
+                        height: 62%;
+                        margin-top: -12%;
+                        border-radius: 0.5rem;
+                        overflow-y: scroll;
+                        img {
+                            width: 100%;
+                        }
+
+                    }
+                }
                     }
                 }
                 #con {
