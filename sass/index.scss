@@ -1018,6 +1018,8 @@ body.dark {
                         height: 0;
                         opacity: 0;
                         z-index: -2;
+                        font-size: 0;
+                        animation: none;
                     }
                 }
                 #in.fullscreen {
@@ -1033,6 +1035,8 @@ body.dark {
                         height: 0;
                         opacity: 0;
                         z-index: -2;
+                        font-size: 0;
+                        animation: none;
                     }
                     #pro_cont {
                         height: 55%;
@@ -1060,6 +1064,8 @@ body.dark {
                         height: 0;
                         opacity: 0;
                         z-index: -2;
+                        font-size: 0;
+                        animation: none;
                     }
                     #len_cont {
                         width: 80%;
@@ -1081,6 +1087,8 @@ body.dark {
                         height: 0;
                         opacity: 0;
                         z-index: -2;
+                        font-size: 0;
+                        animation: none;
                     }
                     #tec_cont {
                         height: 70%;
@@ -1150,6 +1158,8 @@ body.dark {
                         height: 0;
                         opacity: 0;
                         z-index: -2;
+                        font-size: 0;
+                        animation: none;
                     }
                 }
                 #con {
@@ -1163,6 +1173,8 @@ body.dark {
                         height: 0;
                         opacity: 0;
                         z-index: -2;
+                        font-size: 0;
+                        animation: none;
                     }
                     #con_cont {
                         ul {
@@ -1269,7 +1281,7 @@ body.dark {
                             font-size: 180%;
                         }
                 #res_cont_cont {
-                    width: 20rem;
+                    width: 18rem;
                     height: 15rem;
                     background-image: url("../img/icons/monitor.webp");
                     #img1 {
@@ -1284,8 +1296,8 @@ body.dark {
                     }
                     #img2 {
                         width: 83%;
-                        height: 62%;
-                        margin-top: -12%;
+                        height: 50%;
+                        margin-top: -3%;
                         border-radius: 0.5rem;
                         overflow-y: scroll;
                         img {
