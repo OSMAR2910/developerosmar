@@ -340,6 +340,9 @@ body {
                             width: 100%;
                             border-radius: 10%;
                         }
+                        img:hover {
+                            filter: blur(5px);
+                        }
                         b {
                             font-family: 'Rubik Wet Paint', cursive;
                             display: flex;
