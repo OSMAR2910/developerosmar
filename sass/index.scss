@@ -735,12 +735,11 @@ body {
                 align-items: center;
                 justify-content: center;
                 ul {
-                    width: 35rem;
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+                    width: 45rem;
                     padding: 0;
                     margin: 0;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
                     li {
                         display: flex;
                         justify-content: center;
@@ -751,7 +750,7 @@ body {
                             background-color: $Secundario;
                             color: $Blanco;
                             border: 2px solid $Blanco;
-                            padding: 1%;
+                            padding: 1rem;
                             border-radius: 10%;
                             opacity: 0;
                             position: absolute;
@@ -767,8 +766,8 @@ body {
                             text-decoration: none;
                             border: 0;
                             background: none;
+                            margin: 5%;
                             .button-bg {
-                                border-radius: 20%;
                                 position: absolute;
                                 top: 0;
                                 left: 0;
@@ -792,7 +791,6 @@ body {
                                 }
                             }
                             .button-label {
-                                border-radius: 20%;
                                 background-color: $Secundario;
                                 display: flex;
                                 align-items: center;
@@ -818,7 +816,7 @@ body {
                     }
                     li:hover {
                         .tooltip-box {
-                            margin-top: -13%;
+                            margin-top: -11rem;
                             opacity: 100%;
                         }
                     }
@@ -1313,18 +1311,19 @@ body.dark {
                 }
                 #con {
                     .woman {
-                        background-size: 45%;
-                        background-position: 100% 100%;
+                        background-size: 65%;
+                        background-position: 100% 95%;
                     }
                     h1 {
                         font-size: 180%;
                     }
                     #con_cont {
                         width: 100%;
-                        height: 70%;
+                        height: 50%;
                         ul {
                             width: 35rem;
                             flex-direction: column;
+                            grid-template-columns: repeat(3,1fr);
                             li {
                                 margin: 1%;
                             }
